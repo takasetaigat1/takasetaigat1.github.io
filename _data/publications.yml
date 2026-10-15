@@ -18,6 +18,8 @@
 #   pdf: "/assets/pdf/xxx.pdf"   # 任意
 #
 # 主著の投稿中論文が出版されたら category を first_published に変え、status を消して doi を入れる。
+# doi または url があると、タイトルがそのリンクになります。
+# status が submitted のときは「Submitted to 誌名」と表示されます。
 
 # ---- 主著（投稿中） ----
 - category: first_submitted
@@ -38,7 +40,7 @@
 - category: coauthor
   year: 2026
   authors: "H. Onuma, et al. (<me>T. Takase</me>, 5th of 7 authors)"
-  title: "Surface Modifications of a Space-weathered Ryugu Sample and the Reflectance Spectral Response"
+  title: "Surface modifications of a space-weathered Ryugu sample and the reflectance spectral response"
   journal: "The Planetary Science Journal"
   volume: "7"
   pages: "11"
