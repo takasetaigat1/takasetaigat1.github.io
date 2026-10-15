@@ -1,30 +1,36 @@
 # ニュース（新しいものを上に書く）
 # date: YYYY-MM-DD  text: 本文  tag: 任意（発表 / 論文 / 受賞 / お知らせ など）  url: 任意
-- date: 2026-10-15
+- date: 2027-04-01
+  text: 博士後期課程に進学し，日本学術振興会 特別研究員（DC1）に採用されました
+  tag: お知らせ
+- date: 2027-04-01
   text: ウェブサイトを公開しました
   tag: お知らせ
-- date: 2026-08-01
-  text: 88th Annual Meeting of the Meteoritical Society（フランクフルト）にて口頭発表を行いました
+- date: 2026-10-21
+  text: MMX International Science Workshop 2026 にて発表を行いました
   tag: 発表
-- date: 2026-05-01
+- date: 2026-08-13
+  text: The 88th Annual Meeting of the Meteoritical Society（フランクフルト）にて口頭発表を行い，Schwiete Travel Award を受賞しました
+  tag: 受賞
+- date: 2026-05-28
   text: JpGU–AGU Joint Meeting 2026 にて口頭発表を行いました
   tag: 発表
 - date: 2026-01-01
   text: 共著論文が The Planetary Science Journal に掲載されました
   tag: 論文
   url: https://doi.org/10.3847/PSJ/ae2b68
-- date: 2025-11-01
-  text: Hayabusa Symposium 2025 にて口頭発表を行いました
+- date: 2025-11-14
+  text: 12th Symposium of Solar System Materials（Hayabusa 2025）にて口頭発表を行いました
   tag: 発表
-- date: 2025-10-01
+- date: 2025-10-08
   text: Workshop on Bennu and Ryugu（テキサス）にて口頭発表を行いました
   tag: 発表
-- date: 2025-09-01
+- date: 2025-09-19
   text: 日本地球化学会 第72回年会にて学生奨励賞を受賞しました
   tag: 受賞
-- date: 2025-07-01
-  text: 87th Annual Meeting of the Meteoritical Society（パース）にて The Barringer Crater Award を受賞しました
+- date: 2025-07-14
+  text: The 87th Annual Meeting of the Meteoritical Society（パース）にて口頭発表を行い，Barringer Crater Travel Award を受賞しました
   tag: 受賞
-- date: 2024-09-01
+- date: 2024-09-21
   text: 日本宇宙生物科学会 第38回大会にて優秀発表賞を受賞しました
   tag: 受賞
