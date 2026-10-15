@@ -34,7 +34,7 @@ GitHub のリポジトリ画面でファイルを開き、鉛筆アイコン →
 ```yaml
 - category: first_published      # first_published / first_submitted / coauthor
   year: 2026
-  authors: "<me>Takase, T.</me>, Nakamura, T., Matsumoto, M."
+  authors: "<me>T. Takase</me>, T. Nakamura, M. Matsumoto"
   title: "Micro-FTIR comparison of Ryugu and Bennu samples"
   journal: "Icarus"
   volume: "420"

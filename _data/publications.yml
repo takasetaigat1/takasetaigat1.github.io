@@ -8,7 +8,7 @@
 # 1 件の書き方：
 # - category: first_published
 #   year: 2026
-#   authors: "<me>Takase, T.</me>, Nakamura, T., ..."   # <me>…</me> で囲むと太字
+#   authors: "<me>T. Takase</me>, T. Nakamura, ..."   # <me>…</me> で囲むと太字
 #   title: "論文タイトル"
 #   journal: "Icarus"
 #   volume: "420"           # 任意
@@ -22,7 +22,7 @@
 # ---- 主著（投稿中） ----
 - category: first_submitted
   year: 2026
-  authors: "<me>Takase, T.</me>, Nakamura, T., Fukuda, Y., Tsutsui, K., Ishida, S., Kawada, R., Amano, K., Enokido, Y., Sakamoto, K., Tachibana, S."
+  authors: "<me>T. Takase</me>, T. Nakamura, Y. Fukuda, K. Tsutsui, S. Ishida, R. Kawada, K. Amano, Y. Enokido, K. Sakamoto, S. Tachibana"
   title: "Submillimeter-scale diversity of near- to mid-infrared reflectance spectra within samples from asteroids Ryugu and Bennu: Records of space weathering and aqueous alteration"
   journal: "Icarus"
   status: "submitted"
@@ -30,14 +30,14 @@
 # ---- 共著 ----
 - category: coauthor
   year: 2026
-  authors: "Ishida, S., et al. (<me>Takase, T.</me>, 4th of 19 authors)"
+  authors: "S. Ishida, et al. (<me>T. Takase</me>, 4th of 19 authors)"
   title: "Reflectance spectroscopy of returned samples reveals the aqueous alteration and space weathering histories of carbonaceous asteroids Bennu and Ryugu"
   journal: "Scientific Reports"
   status: "submitted"
 
 - category: coauthor
   year: 2026
-  authors: "Onuma, H., Matsumoto, M., Nakamura, T., Amano, K., <me>Takase, T.</me>, Ninomiya, K., Nomura, H."
+  authors: "H. Onuma, M. Matsumoto, T. Nakamura, K. Amano, <me>T. Takase</me>, K. Ninomiya, H. Nomura"
   title: "Surface Modifications of a Space-weathered Ryugu Sample and the Reflectance Spectral Response"
   journal: "The Planetary Science Journal"
   volume: "7"

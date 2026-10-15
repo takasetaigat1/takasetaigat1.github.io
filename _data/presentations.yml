@@ -2,7 +2,7 @@
 #
 # - date: 2026-08
 #   scope: international          # international / domestic
-#   authors: "<me>Takase, T.</me>, Nakamura, T."
+#   authors: "<me>T. Takase</me>, T. Nakamura"
 #   title: "発表タイトル"
 #   meeting: "Meteoritical Society 2026"
 #   place: "Perth, Australia"       # 任意
@@ -12,13 +12,13 @@
 
 - date: 2026-10
   scope: international
-  authors: "<me>Takase, T.</me>"
+  authors: "<me>T. Takase</me>"
   title: "Clast-scale spectral variations in Ryugu and Bennu samples: Implications for interpreting remote-sensing observations"
   meeting: "MMX International Science Workshop 2026"
 
 - date: 2026-08
   scope: international
-  authors: "<me>Takase, T.</me>, Matsumoto, M., Nakamura, T., Kawada, R., Ishida, S., Yamashita, S., Takahashi, Y."
+  authors: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, R. Kawada, S. Ishida, S. Yamashita, Y. Takahashi"
   title: "Evidence for impact-induced shock melting in a sample from carbonaceous asteroid Ryugu"
   meeting: "The 88th Annual Meeting of the Meteoritical Society"
   place: "Frankfurt, Germany"
@@ -27,7 +27,7 @@
 
 - date: 2026-06
   scope: international
-  authors: "<me>Takase, T.</me>, Fukuda, Y., Nakamura, T."
+  authors: "<me>T. Takase</me>, Y. Fukuda, T. Nakamura"
   title: "Effects of carbon coating and electron beam irradiation on the reflectance spectra of carbonaceous meteorites and returned samples"
   meeting: "Earth, Sea and Sky XII: International Joint Graduate Program Workshop in Earth and Environmental Sciences"
   place: "Sendai, Japan"
@@ -51,7 +51,7 @@
 
 - date: 2025-11
   scope: international
-  authors: "<me>Takase, T.</me>, Matsumoto, M., Nakamura, T., Fukuda, Y., Kawada, R., Ishida, S., Yamashita, S., Takahashi, Y., Enokido, Y., Sakamoto, K., Tachibana, S."
+  authors: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, Y. Fukuda, R. Kawada, S. Ishida, S. Yamashita, Y. Takahashi, Y. Enokido, K. Sakamoto, S. Tachibana"
   title: "Chemical characteristics of amorphous Na−Mg phosphate phases in samples from asteroids Bennu and Ryugu"
   meeting: "12th Symposium of Solar System Materials (Hayabusa 2025)"
   place: "Sagamihara, Japan"
@@ -59,7 +59,7 @@
 
 - date: 2025-10
   scope: international
-  authors: "<me>Takase, T.</me>, Fukuda, Y., Nakamura, T., Tsutsui, K., Ishida, S., Kawada, R., Enokido, Y., Sakamoto, K., Tachibana, S."
+  authors: "<me>T. Takase</me>, Y. Fukuda, T. Nakamura, K. Tsutsui, S. Ishida, R. Kawada, Y. Enokido, K. Sakamoto, S. Tachibana"
   title: "FT-IR and synchrotron XRD analyses of samples from asteroids Ryugu and Bennu: Spectral and mineralogical diversity at the sub-millimeter scale"
   meeting: "Workshop on Bennu and Ryugu: Samples from the Early Solar System"
   place: "Texas, USA"
@@ -76,7 +76,7 @@
 
 - date: 2025-07
   scope: international
-  authors: "<me>Takase, T.</me>, Fukuda, Y., Nakamura, T., Tsutsui, K., Ishida, S., Kawada, R., Matsumoto, M., Matsuno, J., Uesugi, K., Yagi, N., Enokido, Y., Sakamoto, K., Tachibana, S."
+  authors: "<me>T. Takase</me>, Y. Fukuda, T. Nakamura, K. Tsutsui, S. Ishida, R. Kawada, M. Matsumoto, J. Matsuno, K. Uesugi, N. Yagi, Y. Enokido, K. Sakamoto, S. Tachibana"
   title: "Diversity of reflectance spectra and mineralogy of samples from asteroids Ryugu and Bennu"
   meeting: "The 87th Annual Meeting of the Meteoritical Society"
   place: "Perth, Australia"
@@ -85,7 +85,7 @@
 
 - date: 2025-06
   scope: international
-  authors: "<me>Takase, T.</me>, Fukuda, Y., Nakamura, T."
+  authors: "<me>T. Takase</me>, Y. Fukuda, T. Nakamura"
   title: "Relationships between reflectance spectra and surface structures of space-weathered samples from asteroid Ryugu"
   meeting: "Earth, Sea and Sky XI: International Joint Graduate Program Workshop in Earth and Environmental Sciences"
   place: "Sendai, Japan"
@@ -93,7 +93,7 @@
 
 - date: 2025-05
   scope: domestic
-  authors: "<me>Takase, T.</me>, Fukuda, Y., Nakamura, T."
+  authors: "<me>T. Takase</me>, Y. Fukuda, T. Nakamura"
   title: "Diversity of mid-infrared reflectance spectra of samples from asteroid Ryugu"
   meeting: "Japan Geoscience Union Meeting 2025"
   place: "Makuhari, Japan"
