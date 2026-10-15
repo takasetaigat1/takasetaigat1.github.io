@@ -15,7 +15,7 @@ GitHub のリポジトリ画面でファイルを開き、鉛筆アイコン →
 | 論文を足す | `_data/publications.yml`（一番上に追記） |
 | 学会発表を足す | `_data/presentations.yml`（一番上に追記） |
 | 研究テーマの文章・図 | `_data/topics.yml`、図は `assets/img/research/` に置く |
-| 学歴・受賞・所属学会 | `_data/profile.yml` |
+| 経歴・受賞・研究費・活動 | `_data/profile.yml` |
 | トップページの自己紹介文 | `index.html` の `<p class="lead">` の中 |
 | 英語ページ | `en/index.html` |
 | 顔写真 | `assets/img/profile.jpg` を差し替え（縦長推奨） |

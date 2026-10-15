@@ -1,18 +1,16 @@
 ---
 layout: default
-description: 小惑星リュウグウ・ベンヌの帰還試料の鉱物学
+description: 小惑星リターンサンプルの分析研究
 ---
 {% assign a = site.author %}
 <section class="hero{% if a.photo == blank %} no-photo{% endif %}">
   <div>
     <h1>{{ a.name_ja }}<small>{{ a.name_en }}</small></h1>
-    <div class="aff">
-      {{ a.affiliation_ja }} {{ a.title_ja }}<br>
-      {{ a.lab_ja }}
-    </div>
+    <div class="aff">{{ a.affiliation_ja }}</div>
     <p class="lead">
-      小惑星リュウグウ・ベンヌから持ち帰られた試料の鉱物学を研究しています。
-      顕微 FTIR，放射光 X 線回折，透過電子顕微鏡を用いて，小惑星内部で起きた水質変成と宇宙風化の記録を読み解いています。
+      小惑星リターンサンプルの分析研究に主に取り組んでいます。
+      電子顕微鏡観察や分光分析，放射光を利用した分析を通じて，初期太陽系での物理・化学過程や，
+      現在の太陽系に至るまでに起きたダイナミクスを解明したいと考えています。
     </p>
     <div class="links">
       {% for l in site.links %}<a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>{% endfor %}

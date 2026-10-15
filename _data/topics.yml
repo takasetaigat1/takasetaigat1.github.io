@@ -7,27 +7,17 @@
 #   methods: 使う手法（任意）
 #   image: /assets/img/research/xxx.jpg   （任意。無ければ灰色の枠が出ます。枠を消すなら行ごと削除）
 
-- title: 帰還試料の鉱物学
-  short: リュウグウ・ベンヌ粒子の鉱物組成と微細組織
+- title: AAA
+  short: AAA の一行説明（仮）
   body: |
-    はやぶさ2が小惑星リュウグウから、OSIRIS-REx が小惑星ベンヌから持ち帰った試料を対象に、
-    鉱物組成と微細組織を調べています。両天体の試料を同じ手法で比較することで、
-    母天体で起きた水質変成の条件とその違いを明らかにすることを目指しています。
-  methods: 放射光 XRD（Gandolfi 法）・SEM-EDS・TEM-EDS
-  image: /assets/img/research/topic1.jpg
+    AAA の本文（仮）。後で書き換えます。
 
-- title: 顕微赤外分光
-  short: micro-FTIR による含水鉱物・有機物の分布
+- title: BBB
+  short: BBB の一行説明（仮）
   body: |
-    顕微 FTIR を用いて、試料断面上の含水鉱物や有機物の分布を可視化しています。
-    炭素コートや電子線照射がスペクトルに与える影響の評価にも取り組んでいます。
-  methods: micro-FTIR（反射・透過）
-  image: /assets/img/research/topic2.jpg
+    BBB の本文（仮）。後で書き換えます。
 
-- title: 宇宙風化
-  short: 表面非晶質化と太陽風照射の痕跡
+- title: CCC
+  short: CCC の一行説明（仮）
   body: |
-    小惑星表面で太陽風や微小隕石衝突を受けた粒子に残る、表面非晶質化などの
-    宇宙風化の痕跡を TEM で観察しています。
-  methods: TEM・XANES
-  image: /assets/img/research/topic3.jpg
+    CCC の本文（仮）。後で書き換えます。

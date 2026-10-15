@@ -9,13 +9,14 @@ permalink: /en/
   <div>
     <h1>{{ a.name_en }}<small>{{ a.name_ja }}</small></h1>
     <div class="aff">
-      Master's student, {{ a.affiliation_en }}<br>
-      {{ a.lab_en }} · {{ a.location_en }}
+      {{ a.affiliation_en }}<br>
+      {{ a.lab_en }}
     </div>
     <p class="lead">
-      I study the mineralogy of samples returned from the asteroids Ryugu (Hayabusa2) and Bennu (OSIRIS-REx).
-      Using micro-FTIR spectroscopy, synchrotron X-ray diffraction, and transmission electron microscopy,
-      I read the record of aqueous alteration and space weathering preserved in these materials.
+      My main work is the analysis of samples returned from asteroids.
+      Through electron microscopy, spectroscopy, and synchrotron-based analysis,
+      I aim to understand the physical and chemical processes in the early solar system
+      and the dynamics that shaped the solar system we see today.
     </p>
     <div class="links">
       {% for l in site.links %}<a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>{% endfor %}
@@ -26,10 +27,8 @@ permalink: /en/
 
 <h2>Research interests</h2>
 <div class="content"><ul>
-  <li>Mineralogy of returned asteroid samples (Ryugu and Bennu)</li>
-  <li>Micro-FTIR spectroscopy of hydrous minerals and organics</li>
-  <li>Space weathering of carbonaceous asteroids</li>
-  <li>Synchrotron X-ray diffraction (Gandolfi geometry)</li>
+  <li>Mineralogical analysis of returned asteroid samples and meteorites</li>
+  <li>Analysis of remote-sensing data from planetary exploration missions</li>
 </ul></div>
 
 <h2>Publications <a href="{{ '/publications/' | relative_url }}">Full list →</a></h2>
@@ -46,4 +45,5 @@ permalink: /en/
 
 <h2>Contact</h2>
 <p>{{ a.affiliation_en }}<br>
+{{ a.address_en }}<br>
 <a href="mailto:{{ a.email }}">{{ a.email }}</a></p>

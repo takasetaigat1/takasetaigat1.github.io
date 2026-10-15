@@ -6,12 +6,93 @@
 #   meeting: "Meteoritical Society 2026"
 #   place: "Perth, Australia"       # 任意
 #   type: 口頭                        # 口頭 / ポスター / 招待 など
-#   award: "学生優秀発表賞"            # 任意
+#   award: "学生奨励賞"                # 任意
 #   url: ""                          # 任意（要旨など）
-#
-# 以下はサンプル。実際の発表に書き換えてください。
+
+# ---- 国際学会 ----
 - date: 2026-08
-  authors: "<me>Takase, T.</me>, Nakamura, T."
-  title: "（サンプル）Shock melt in a Ryugu particle"
-  meeting: "Meteoritical Society 2026"
+  authors: "<me>Takase, T.</me>, et al."
+  title: "Evidence for impact-induced shock melting in a sample from asteroid Ryugu"
+  meeting: "88th Annual Meeting of the Meteoritical Society"
+  place: "Frankfurt, Germany"
   type: 口頭
+
+- date: 2026-06
+  authors: "<me>Takase, T.</me>, et al."
+  title: "Effects of carbon coating and electron beam irradiation on the reflectance spectra of carbonaceous meteorites"
+  meeting: "Earth, Sea and Sky XII: Workshop for International Joint Graduate Program & Core Research Cluster in Earth and Environmental Sciences"
+  place: "Sendai, Japan"
+  type: ポスター
+
+- date: 2026-05
+  authors: "<me>Takase, T.</me>, et al."
+  title: "Mineralogical study of shock melt in the sample from asteroid Ryugu"
+  meeting: "JpGU–AGU Joint Meeting 2026"
+  place: "Makuhari, Japan"
+  type: 口頭
+
+- date: 2026-03
+  authors: "<me>髙瀬大河</me> ほか"
+  title: "小惑星 Ryugu・Bennu 試料に含まれる NH4−Na−Mg リン酸塩の形成進化過程"
+  meeting: "2025年度 地球化学会若手会 春の研究会"
+  place: "名古屋"
+  type: ポスター
+
+- date: 2025-11
+  authors: "<me>Takase, T.</me>, et al."
+  title: "Chemical characteristics of Na−Mg phosphate phases in samples from asteroids Bennu and Ryugu"
+  meeting: "Hayabusa Symposium 2025"
+  place: "Sagamihara, Japan"
+  type: 口頭
+
+- date: 2025-10
+  authors: "<me>Takase, T.</me>, et al."
+  title: "FT-IR and synchrotron-XRD analyses of samples from asteroids Ryugu and Bennu: Spectral and mineralogical diversity at the sub-millimeter scale"
+  meeting: "Workshop on Bennu and Ryugu: Samples from the Early Solar System"
+  place: "Texas, USA"
+  type: 口頭
+
+- date: 2025-09
+  authors: "<me>髙瀬大河</me> ほか"
+  title: "小惑星 Ryugu・Bennu 試料中の非晶質 Na−Mg リン酸塩相の化学的特徴"
+  meeting: "日本地球化学会 第72回年会"
+  place: "仙台"
+  type: 口頭
+  award: "学生奨励賞"
+
+- date: 2025-07
+  authors: "<me>Takase, T.</me>, et al."
+  title: "Diversity of reflectance spectra and mineralogy of samples from asteroids Ryugu and Bennu"
+  meeting: "87th Annual Meeting of the Meteoritical Society"
+  place: "Perth, Australia"
+  type: 口頭
+  award: "The Barringer Crater Award"
+
+- date: 2025-06
+  authors: "<me>Takase, T.</me>, et al."
+  title: "Relationships between reflectance spectra and surface structures of space-weathered samples from asteroid Ryugu"
+  meeting: "Earth, Sea and Sky XI: Workshop for International Joint Graduate Program & Core Research Cluster in Earth and Environmental Sciences"
+  place: "Sendai, Japan"
+  type: ポスター
+
+- date: 2025-05
+  authors: "<me>Takase, T.</me>, et al."
+  title: "Diversity of mid-infrared reflectance spectra of samples from asteroid Ryugu"
+  meeting: "JpGU Meeting 2025"
+  place: "Makuhari, Japan"
+  type: 口頭
+
+- date: 2024-11
+  authors: "<me>髙瀬大河</me> ほか"
+  title: "火星を想定した環境下でのローバーによる簡易的な土壌試料採取・生命探査機構の開発"
+  meeting: "第68回 宇宙科学技術連合講演会"
+  place: "姫路"
+  type: ポスター
+
+- date: 2024-09
+  authors: "<me>髙瀬大河</me> ほか"
+  title: "惑星探査ローバによる簡易的な生命探査機構の開発：土壌試料の化学分析・特性評価"
+  meeting: "日本宇宙生物科学会 第38回大会"
+  place: "山形"
+  type: 口頭
+  award: "優秀発表賞"

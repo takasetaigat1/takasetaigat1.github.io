@@ -3,34 +3,29 @@
 #  ここを書き換えるだけで、全ページの氏名・所属・リンクが変わります
 # ============================================================
 
-title: 高瀬 大河 (Taiga Takase)
+title: 髙瀬 大河 (Taiga Takase)
 url: "https://takasetaigat1.github.io"
 baseurl: ""                 # ユーザーサイトなので空のまま（行は消さない）
 lang: ja
 
 author:
-  name_ja: 高瀬 大河         # ← 漢字表記を確認して直してください
+  name_ja: 髙瀬 大河
   name_en: Taiga Takase
-  title_ja: 博士前期課程
-  affiliation_ja: 東北大学大学院 理学研究科 地学専攻
+  affiliation_ja: 東北大学 理学研究科 地学専攻
   affiliation_en: Department of Earth Science, Graduate School of Science, Tohoku University
-  lab_ja: 中村智樹 研究室
-  lab_en: Nakamura Laboratory
-  location_ja: 宮城県仙台市
-  location_en: Sendai, Japan
+  lab_ja: 初期太陽系進化学研究室
+  lab_en: Early Solar System Evolution Laboratory
   email: takase.taiga.t1@dc.tohoku.ac.jp
+  address_ja: 〒980-8578 宮城県仙台市青葉区荒巻字青葉 6-3 東北大学 理学部 地学系
+  address_en: 6-3 Aramaki Aza-Aoba, Aoba-ku, Sendai 980-8578, Japan
   photo: /assets/img/profile.jpg   # 顔写真。無ければ空にする → 写真枠が消えます
 
-# トップページ・プロフィールに並ぶ外部リンク（不要な行は消す／URL は要記入）
+# トップページ・プロフィールに並ぶ外部リンク
 links:
-  - label: researchmap
-    url: https://researchmap.jp/
   - label: ORCID
-    url: https://orcid.org/
+    url: https://orcid.org/0009-0009-6168-9597
   - label: Google Scholar
-    url: https://scholar.google.com/
-  - label: GitHub
-    url: https://github.com/takasetaigat1
+    url: https://scholar.google.com/     # ← 自分のプロフィール URL に差し替え
   - label: Email
     url: mailto:takase.taiga.t1@dc.tohoku.ac.jp
 

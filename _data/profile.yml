@@ -2,25 +2,33 @@
 # 日付は "2025.04" のような文字列でOK。不要な項目は行ごと消してください。
 
 interests:
-  - 小惑星帰還試料（リュウグウ・ベンヌ）の鉱物学
-  - 含水鉱物の顕微赤外分光
-  - 宇宙風化
-  - 放射光 X 線回折
+  - 小惑星リターンサンプル・隕石の鉱物学的分析
+  - 探査機リモートセンシング観測データの解析
 
-education:
+# 経歴（年月は要確認）
+career:
   - period: 2025.04 – 現在
-    text: 東北大学大学院 理学研究科 地学専攻 博士前期課程
+    text: 東北大学 理学研究科 地学専攻 博士前期課程
   - period: 2021.04 – 2025.03
-    text: 東北大学 理学部 地圏環境科学科（サンプル）
+    text: 東北大学 理学部 地球惑星物質科学科
 
 awards:
-  - period: 2026.05
-    text: （サンプル）学生優秀発表賞
+  - period: 2025.09
+    text: 学生奨励賞 — 日本地球化学会 第72回年会
+  - period: 2025.07
+    text: The Barringer Crater Award — 87th Annual Meeting of the Meteoritical Society
+  - period: 2024.09
+    text: 優秀発表賞 — 日本宇宙生物科学会 第38回大会
 
 grants:
-  - period: 2026.04 –
-    text: （サンプル）○○研究助成
+  - period: 2026
+    text: 公益財団法人 宇宙科学振興会 国際学会旅費支援
+  - period: 2025
+    text: JpGU 2025 Student Travel Support
+  - period: 2025 –
+    text: 東北大学 変動地球共生学卓越大学院プログラム
 
-memberships:
-  - 日本惑星科学会（サンプル）
-  - 日本鉱物科学会（サンプル）
+activities:
+  - JAXA 火星衛星探査計画（MMX）火星衛星起源チーム メンバー
+
+memberships: []
