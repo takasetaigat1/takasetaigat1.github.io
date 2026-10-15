@@ -123,6 +123,7 @@ p { margin: 0 0 1em; }
 .timeline { list-style: none; }
 .timeline li { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 14px; }
 .timeline .dt { color: var(--mute); font-size: 13px; font-variant-numeric: tabular-nums; }
+.timeline .sub { color: var(--ink-3); margin-left: 1em; }
 
 /* ---------- research page ---------- */
 .research-item { display: grid; grid-template-columns: 1fr 240px; gap: 32px; padding: 28px 0; border-bottom: 1px solid var(--line); }

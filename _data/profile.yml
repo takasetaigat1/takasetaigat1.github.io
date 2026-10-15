@@ -17,13 +17,17 @@ career:
 
 awards:
   - period: 2026.08
-    text: Schwiete Travel Award — The 88th Annual Meeting of the Meteoritical Society
+    text: Schwiete Travel Award
+    sub: The 88th Annual Meeting of the Meteoritical Society
   - period: 2025.09
-    text: 学生奨励賞 — 日本地球化学会 第72回年会
+    text: 学生奨励賞
+    sub: 日本地球化学会 第72回年会
   - period: 2025.07
-    text: Barringer Crater Travel Award — The 87th Annual Meeting of the Meteoritical Society
+    text: Barringer Crater Travel Award
+    sub: The 87th Annual Meeting of the Meteoritical Society
   - period: 2024.09
-    text: 優秀発表賞 — 日本宇宙生物科学会 第38回大会
+    text: 優秀発表賞
+    sub: 日本宇宙生物科学会 第38回大会
 
 grants:
   - period: 2027.04 –
