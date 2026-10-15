@@ -1,4 +1,4 @@
-{% assign is_en = page.lang == "en" %}
+{% if page.lang == "en" %}{% assign is_en = true %}{% else %}{% assign is_en = false %}{% endif %}
 <aside class="side">
   <div class="side-head">
     <a class="side-name" href="{{ '/' | relative_url }}">
