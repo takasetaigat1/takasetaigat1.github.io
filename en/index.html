@@ -38,7 +38,7 @@ permalink: /en/
     <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" }}</span>
     {% assign link = "" %}{% if pb.doi %}{% assign link = "https://doi.org/" | append: pb.doi %}{% elsif pb.url %}{% assign link = pb.url %}{% endif %}
     <span class="ptitle">{% if link != "" %}<a href="{{ link }}" target="_blank" rel="noopener">{{ pb.title }}</a>{% else %}{{ pb.title }}{% endif %}</span>
-    <span class="journal">{% if pb.status == "submitted" %}Submitted to <i>{{ pb.journal }}</i>{% else %}<i>{{ pb.journal }}</i>{% if pb.volume %}, {{ pb.volume }}{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %} ({{ pb.status }}){% else %}, {{ pb.year }}{% endif %}{% endif %}</span>
+    <span class="journal">{% if pb.status == "submitted" %}Submitted to <i>{{ pb.journal }}</i>{% else %}<i>{{ pb.journal }}</i>{% if pb.volume %} {{ pb.volume }}{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %} ({{ pb.status }}){% else %}, {{ pb.year }}{% endif %}{% endif %}</span>
   </li>
   {% endfor %}
 </ol>
