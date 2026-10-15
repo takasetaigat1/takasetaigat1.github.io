@@ -24,7 +24,7 @@ permalink: /profile/
 
 {% if p.awards.size > 0 %}
 <h2>受賞</h2>
-<ul class="timeline">{% for e in p.awards %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}{% if e.sub %}<span class="sub">{{ e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
+<ul class="timeline">{% for e in p.awards %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}{% if e.sub %} <span class="sub">{{ e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
 {% endif %}
 
 {% if p.grants.size > 0 %}
