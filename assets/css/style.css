@@ -12,8 +12,8 @@
   --line:     #e6e8ea;   /* 罫線 */
   --bg:       #ffffff;
   --bg-2:     #f7f8f8;
-  /* 全体をゴシックに。Mac はヒラギノ角ゴ、他環境は Noto Sans JP（Web フォント）で代替 */
-  --sans:  "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", "Inter", sans-serif;
+  /* 欧文は Helvetica、和文はヒラギノ角ゴ。他環境は Arial / Noto Sans JP（Web フォント）で代替 */
+  --sans:  "Helvetica Neue", Helvetica, Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
   --serif: var(--sans);
   --side-w: 250px;
 }
