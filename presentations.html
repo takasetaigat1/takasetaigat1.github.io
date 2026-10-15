@@ -1,22 +1,32 @@
 ---
 layout: default
-title: 発表
+title: プレゼンテーション
 permalink: /presentations/
 ---
 <div class="page-title">
-  <h1>発表リスト</h1>
+  <h1>プレゼンテーション</h1>
   <div class="muted">Presentations</div>
 </div>
 
-<ol class="pubs">
-  {% for pr in site.data.presentations %}
-  <li>
-    <span class="authors">{{ pr.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" }}</span>
-    <span class="ptitle">{{ pr.title }}</span>
-    <span class="journal">
-      {{ pr.meeting }}{% if pr.place %}, {{ pr.place }}{% endif %}, {{ pr.date | date: "%Y/%m" }}{% if pr.type %}（{{ pr.type }}）{% endif %}{% if pr.award %} — <b>{{ pr.award }}</b>{% endif %}
-    </span>
-    {% if pr.url %}<div class="plinks"><a href="{{ pr.url }}" target="_blank" rel="noopener">Link</a></div>{% endif %}
-  </li>
-  {% endfor %}
-</ol>
+{% assign sections = "international|国際学会,domestic|国内学会" | split: "," %}
+{% for s in sections %}
+  {% assign pair = s | split: "|" %}
+  {% assign key = pair[0] %}
+  {% assign label = pair[1] %}
+  {% assign items = site.data.presentations | where: "scope", key %}
+  {% if items.size > 0 %}
+  <h2>{{ label }}</h2>
+  <ol class="pubs">
+    {% for pr in items %}
+    <li>
+      <span class="authors">{{ pr.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" }}</span>
+      <span class="ptitle">{{ pr.title }}</span>
+      <span class="journal">
+        {{ pr.meeting }}{% if pr.place %}, {{ pr.place }}{% endif %}, {{ pr.date | date: "%Y/%m" }}{% if pr.type %}（{{ pr.type }}）{% endif %}{% if pr.award %} — <b>{{ pr.award }}</b>{% endif %}
+      </span>
+      {% if pr.url %}<div class="plinks"><a href="{{ pr.url }}" target="_blank" rel="noopener">Link</a></div>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+{% endfor %}
