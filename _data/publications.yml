@@ -24,6 +24,13 @@
 # ---- 主著（投稿中） ----
 - category: first_submitted
   year: 2026
+  authors: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, R. Kawada, S. Ishida, Y. Enokido, R. Sakurai, S. Yamashita, Y. Takahashi, K. Sakamoto, S. Tachibana"
+  title: "Chemical characteristics of amorphous Na–Mg phosphate phases in samples from asteroids Bennu and Ryugu"   # ← 仮タイトル（学会発表のもの）。論文の正式タイトルに差し替え
+  journal: "Meteoritics & Planetary Science"
+  status: "submitted"
+
+- category: first_submitted
+  year: 2026
   authors: "<me>T. Takase</me>, T. Nakamura, Y. Fukuda, K. Tsutsui, S. Ishida, R. Kawada, K. Amano, Y. Enokido, K. Sakamoto, S. Tachibana"
   title: "Submillimeter-scale diversity of near- to mid-infrared reflectance spectra within samples from asteroids Ryugu and Bennu: Records of space weathering and aqueous alteration"
   journal: "Icarus"
