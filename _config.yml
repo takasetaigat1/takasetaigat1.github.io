@@ -27,7 +27,7 @@ links:
   - label: ORCID
     url: https://orcid.org/0009-0009-6168-9597
   - label: Google Scholar
-    url: https://scholar.google.com/     # ← 自分のプロフィール URL に差し替え
+    url: https://scholar.google.com/citations?user=u-0T2fUAAAAJ
   - label: Email
     url: mailto:takase.taiga.t1@dc.tohoku.ac.jp
 
