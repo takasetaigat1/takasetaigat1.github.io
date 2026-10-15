@@ -8,7 +8,7 @@ permalink: /publications/
   <div class="muted">Publications</div>
 </div>
 
-{% assign sections = "first_published|主著（出版済み）,first_submitted|主著（投稿中）,coauthor|共著" | split: "," %}
+{% assign sections = "first_published|主著論文（出版済み）,first_submitted|主著論文（投稿中）,coauthor|共著論文" | split: "," %}
 {% for s in sections %}
   {% assign pair = s | split: "|" %}
   {% assign key = pair[0] %}

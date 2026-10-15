@@ -1,9 +1,9 @@
 # 出版物（各区分の中で新しいものを上に書く）
 #
 # category は次の3つのどれか（ページ上でこの順に表示されます）
-#   first_published : 主著（出版済み）
-#   first_submitted : 主著（投稿中）
-#   coauthor        : 共著
+#   first_published : 主著論文（出版済み）
+#   first_submitted : 主著論文（投稿中）
+#   coauthor        : 共著論文
 #
 # 1 件の書き方：
 # - category: first_published
@@ -21,7 +21,7 @@
 # doi または url があると、タイトルがそのリンクになります。
 # status が submitted のときは「Submitted to 誌名」と表示されます。
 
-# ---- 主著（投稿中） ----
+# ---- 主著論文（投稿中） ----
 - category: first_submitted
   year: 2026
   authors: "<me>T. Takase</me>, Y. Fukuda, T. Nakamura"
@@ -43,7 +43,7 @@
   journal: "Icarus"
   status: "submitted"
 
-# ---- 共著 ----
+# ---- 共著論文 ----
 - category: coauthor
   year: 2026
   authors: "S. Ishida, T. Nakamura, K. Tsutsui, <me>T. Takase</me>, R. Kawada, K. Amano, M. Matsuoka, M. Matsumoto, Y. Takahashi, T. Kawai, S. Yamashita, Y. Enokido, J. Matsuno, M. Uesugi, E. Tatsumi, M. Ichikawa, X.-D. Zou, K. Sakamoto, S. Tachibana"
