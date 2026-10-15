@@ -1,0 +1,49 @@
+---
+layout: default
+title: English
+lang: en
+permalink: /en/
+---
+{% assign a = site.author %}
+<section class="hero{% if a.photo == blank %} no-photo{% endif %}">
+  <div>
+    <h1>{{ a.name_en }}<small>{{ a.name_ja }}</small></h1>
+    <div class="aff">
+      Master's student, {{ a.affiliation_en }}<br>
+      {{ a.lab_en }} · {{ a.location_en }}
+    </div>
+    <p class="lead">
+      I study the mineralogy of samples returned from the asteroids Ryugu (Hayabusa2) and Bennu (OSIRIS-REx).
+      Using micro-FTIR spectroscopy, synchrotron X-ray diffraction, and transmission electron microscopy,
+      I read the record of aqueous alteration and space weathering preserved in these materials.
+    </p>
+    <div class="links">
+      {% for l in site.links %}<a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>{% endfor %}
+    </div>
+  </div>
+  {% if a.photo != blank %}<img class="photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_en }}">{% endif %}
+</section>
+
+<h2>Research interests</h2>
+<div class="content"><ul>
+  <li>Mineralogy of returned asteroid samples (Ryugu and Bennu)</li>
+  <li>Micro-FTIR spectroscopy of hydrous minerals and organics</li>
+  <li>Space weathering of carbonaceous asteroids</li>
+  <li>Synchrotron X-ray diffraction (Gandolfi geometry)</li>
+</ul></div>
+
+<h2>Publications <a href="{{ '/publications/' | relative_url }}">Full list →</a></h2>
+<ol class="pubs">
+  {% for pb in site.data.publications limit: 5 %}
+  <li>
+    <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" }}</span>
+    <span class="ptitle">{{ pb.title }}</span>
+    <span class="journal"><i>{{ pb.journal }}</i>{% if pb.volume %}, {{ pb.volume }}{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %} ({{ pb.status }}){% endif %}, {{ pb.year }}</span>
+    {% if pb.doi %}<div class="plinks"><a href="https://doi.org/{{ pb.doi }}" target="_blank" rel="noopener">DOI</a></div>{% endif %}
+  </li>
+  {% endfor %}
+</ol>
+
+<h2>Contact</h2>
+<p>{{ a.affiliation_en }}<br>
+<a href="mailto:{{ a.email }}">{{ a.email }}</a></p>

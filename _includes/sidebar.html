@@ -1,0 +1,22 @@
+{% assign is_en = page.lang == "en" %}
+<aside class="side">
+  <div class="side-head">
+    <a class="side-name" href="{{ '/' | relative_url }}">
+      {% if is_en %}{{ site.author.name_en }}{% else %}{{ site.author.name_ja }}{% endif %}
+    </a>
+    <div class="side-sub">{% if is_en %}{{ site.author.name_ja }}{% else %}{{ site.author.name_en }}{% endif %}</div>
+    <button class="nav-toggle" aria-label="menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+  <nav class="side-nav">
+    {% for item in site.nav %}
+      {% assign active = false %}
+      {% if item.url == "/" %}
+        {% if page.url == "/" %}{% assign active = true %}{% endif %}
+      {% elsif page.url contains item.url %}
+        {% assign active = true %}
+      {% endif %}
+      <a class="nv{% if active %} on{% endif %}" href="{{ item.url | relative_url }}">{{ item.label }}</a>
+    {% endfor %}
+  </nav>
+  <div class="side-foot">{{ site.author.affiliation_ja }}</div>
+</aside>

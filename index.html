@@ -1,0 +1,39 @@
+---
+layout: default
+description: 小惑星リュウグウ・ベンヌの帰還試料の鉱物学
+---
+{% assign a = site.author %}
+<section class="hero{% if a.photo == blank %} no-photo{% endif %}">
+  <div>
+    <h1>{{ a.name_ja }}<small>{{ a.name_en }}</small></h1>
+    <div class="aff">
+      {{ a.affiliation_ja }} {{ a.title_ja }}<br>
+      {{ a.lab_ja }}
+    </div>
+    <p class="lead">
+      小惑星リュウグウ・ベンヌから持ち帰られた試料の鉱物学を研究しています。
+      顕微 FTIR，放射光 X 線回折，透過電子顕微鏡を用いて，小惑星内部で起きた水質変成と宇宙風化の記録を読み解いています。
+    </p>
+    <div class="links">
+      {% for l in site.links %}<a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>{% endfor %}
+    </div>
+  </div>
+  {% if a.photo != blank %}<img class="photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_ja }}">{% endif %}
+</section>
+
+<h2>研究テーマ <a href="{{ '/research/' | relative_url }}">研究内容 →</a></h2>
+<div class="topics">
+  {% for t in site.data.topics limit: 3 %}
+  <div><b>{{ t.title }}</b><span>{{ t.short }}</span></div>
+  {% endfor %}
+</div>
+
+<h2>ニュース <a href="{{ '/news/' | relative_url }}">すべて見る →</a></h2>
+<ul class="dlist">
+  {% for n in site.data.news limit: site.home_news_count %}
+  <li>
+    <span class="dt">{{ n.date | date: "%Y/%m/%d" }}</span>
+    <span>{% if n.url %}<a href="{{ n.url }}">{{ n.text }}</a>{% else %}{{ n.text }}{% endif %}{% if n.tag %}<span class="tag">{{ n.tag }}</span>{% endif %}</span>
+  </li>
+  {% endfor %}
+</ul>

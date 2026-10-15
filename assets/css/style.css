@@ -1,0 +1,170 @@
+/* ============================================================
+   高瀬 大河 — personal site
+   色・フォントはこの :root だけで変えられます
+   ============================================================ */
+:root {
+  --accent:   #1f5f5b;   /* 深緑。リンク・見出し線 */
+  --accent-l: #b9d6d3;   /* 薄い緑。下線 */
+  --ink:      #1d2126;   /* 本文 */
+  --ink-2:    #4b5563;   /* 補助文 */
+  --ink-3:    #6b7280;   /* さらに薄い文 */
+  --mute:     #9ca3af;   /* 日付など */
+  --line:     #e6e8ea;   /* 罫線 */
+  --bg:       #ffffff;
+  --bg-2:     #f7f8f8;
+  --serif: "Noto Serif JP", "Noto Serif CJK JP", "Hiragino Mincho ProN", serif;
+  --sans:  "Inter", "Noto Sans JP", "Noto Sans CJK JP", "Hiragino Sans", sans-serif;
+  --side-w: 250px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 15px;
+  line-height: 1.8;
+  font-feature-settings: "palt";
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+img { max-width: 100%; display: block; }
+
+/* ---------- layout ---------- */
+.wrap { display: grid; grid-template-columns: var(--side-w) 1fr; min-height: 100vh; }
+.main { padding: 72px 72px 48px; max-width: 980px; width: 100%; }
+
+/* ---------- sidebar ---------- */
+.side {
+  border-right: 1px solid var(--line);
+  padding: 48px 32px;
+  position: sticky; top: 0; height: 100vh;
+  display: flex; flex-direction: column;
+}
+.side-name {
+  font-family: var(--serif); font-size: 21px; font-weight: 600;
+  color: var(--ink); letter-spacing: .02em; line-height: 1.4;
+}
+.side-name:hover { text-decoration: none; }
+.side-sub { font-size: 11.5px; color: var(--ink-3); letter-spacing: .12em; text-transform: uppercase; margin-top: 4px; }
+.side-nav { margin-top: 40px; display: flex; flex-direction: column; gap: 8px; }
+.nv {
+  color: var(--ink-2); font-size: 14px; padding: 2px 0 2px 14px;
+  border-left: 2px solid transparent; transition: color .15s, border-color .15s;
+}
+.nv:hover { color: var(--accent); text-decoration: none; }
+.nv.on { color: var(--accent); border-left-color: var(--accent); font-weight: 500; }
+.side-foot { margin-top: auto; font-size: 11px; color: var(--mute); line-height: 1.6; }
+.nav-toggle { display: none; }
+
+/* ---------- typography ---------- */
+h1 {
+  font-family: var(--serif); font-size: 36px; font-weight: 600;
+  line-height: 1.3; letter-spacing: .01em;
+}
+h1 small { display: block; font-family: var(--sans); font-size: 14px; font-weight: 400; color: var(--ink-3); letter-spacing: .06em; margin-top: 6px; }
+h2 {
+  font-family: var(--serif); font-size: 18px; font-weight: 600;
+  margin: 56px 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+h2:first-child { margin-top: 0; }
+h2 a { font-family: var(--sans); font-size: 12px; font-weight: 400; }
+h3 { font-size: 15.5px; font-weight: 600; margin: 28px 0 8px; }
+p { margin: 0 0 1em; }
+.lead { font-size: 16px; max-width: 620px; }
+.muted { color: var(--ink-3); font-size: 14px; }
+.page-title { margin-bottom: 36px; }
+.page-title h1 { font-size: 28px; }
+.page-title .muted { margin-top: 6px; }
+
+/* ---------- hero (home) ---------- */
+.hero { display: grid; grid-template-columns: 1fr 180px; gap: 48px; align-items: start; }
+.hero.no-photo { grid-template-columns: 1fr; }
+.hero .aff { margin-top: 20px; color: var(--ink-2); font-size: 14px; line-height: 1.7; }
+.hero .lead { margin-top: 24px; }
+.photo { width: 180px; aspect-ratio: 9/11; object-fit: cover; border-radius: 2px; background: linear-gradient(160deg, #dfe7e6, #c3d4d2); }
+
+/* ---------- link row ---------- */
+.links { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 24px; }
+.links a { font-size: 13px; border-bottom: 1px solid var(--accent-l); padding-bottom: 1px; }
+.links a:hover { text-decoration: none; border-bottom-color: var(--accent); }
+
+/* ---------- topic cards ---------- */
+.topics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.topics > div { padding-top: 16px; border-top: 2px solid var(--accent); }
+.topics b { display: block; font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+.topics span { font-size: 13px; color: var(--ink-3); line-height: 1.7; }
+
+/* ---------- dated list (news / presentations) ---------- */
+.dlist { list-style: none; }
+.dlist li { display: grid; grid-template-columns: 108px 1fr; gap: 12px; padding: 9px 0; border-bottom: 1px dotted var(--line); font-size: 14px; }
+.dlist .dt { color: var(--mute); font-size: 13px; font-variant-numeric: tabular-nums; padding-top: 1px; }
+.dlist .tag { display: inline-block; font-size: 10.5px; color: var(--accent); border: 1px solid var(--accent-l); border-radius: 3px; padding: 0 6px; margin-left: 8px; vertical-align: 1px; letter-spacing: .04em; }
+
+/* ---------- publications ---------- */
+.pubs { list-style: none; counter-reset: pub; }
+.pubs li { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.7; }
+.pubs .authors { color: var(--ink-2); }
+.pubs .authors .me { font-weight: 600; color: var(--ink); }
+.pubs .ptitle { display: block; font-weight: 500; }
+.pubs .journal { color: var(--ink-3); }
+.pubs .journal i { font-style: italic; }
+.pubs .plinks { margin-top: 3px; font-size: 12.5px; }
+.pubs .plinks a + a { margin-left: 12px; }
+.year-head { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .1em; color: var(--accent); margin: 36px 0 4px; border: 0; padding: 0; }
+.year-head:first-of-type { margin-top: 0; }
+
+/* ---------- profile table ---------- */
+.kv { display: grid; grid-template-columns: 120px 1fr; row-gap: 10px; column-gap: 20px; font-size: 14px; }
+.kv dt { color: var(--ink-3); }
+.kv dd { color: var(--ink); }
+.timeline { list-style: none; }
+.timeline li { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 8px 0; border-bottom: 1px dotted var(--line); font-size: 14px; }
+.timeline .dt { color: var(--mute); font-size: 13px; font-variant-numeric: tabular-nums; }
+
+/* ---------- research page ---------- */
+.research-item { display: grid; grid-template-columns: 1fr 240px; gap: 32px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+.research-item:last-child { border-bottom: 0; }
+.research-item h3 { margin-top: 0; }
+.research-item .fig { width: 100%; aspect-ratio: 4/3; border-radius: 2px; background: var(--bg-2); object-fit: cover; }
+.research-item .methods { font-size: 12.5px; color: var(--ink-3); margin-top: 8px; }
+
+/* ---------- footer ---------- */
+.foot { margin-top: 80px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--mute); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* ---------- content (markdown) ---------- */
+.content ul, .content ol { padding-left: 1.4em; margin-bottom: 1em; }
+.content li { margin: .2em 0; }
+.content table { border-collapse: collapse; width: 100%; font-size: 14px; margin-bottom: 1.2em; }
+.content th, .content td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.content th { color: var(--ink-3); font-weight: 500; font-size: 12.5px; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: 1fr; }
+  .side { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 20px 24px; }
+  .side-head { display: grid; grid-template-columns: 1fr auto; align-items: center; }
+  .side-sub { grid-column: 1; }
+  .nav-toggle {
+    display: block; grid-column: 2; grid-row: 1 / span 2;
+    width: 36px; height: 36px; background: none; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; position: relative;
+  }
+  .nav-toggle span { position: absolute; left: 9px; right: 9px; height: 1.5px; background: var(--ink); transition: transform .2s; }
+  .nav-toggle span:first-child { top: 13px; }
+  .nav-toggle span:last-child { bottom: 13px; }
+  .side-nav { display: none; margin-top: 16px; }
+  .side-nav.open { display: flex; }
+  .side-foot { display: none; }
+  .main { padding: 36px 24px 32px; }
+  h1 { font-size: 28px; }
+  .hero { grid-template-columns: 1fr; }
+  .hero .photo { order: -1; width: 120px; }
+  .topics { grid-template-columns: 1fr; }
+  .research-item { grid-template-columns: 1fr; }
+  .research-item .fig { max-width: 320px; }
+  .dlist li, .timeline li { grid-template-columns: 1fr; gap: 2px; }
+  .kv { grid-template-columns: 1fr; row-gap: 2px; }
+  .kv dt { margin-top: 8px; }
+}

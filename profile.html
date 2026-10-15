@@ -1,0 +1,39 @@
+---
+layout: default
+title: プロフィール
+permalink: /profile/
+---
+{% assign a = site.author %}{% assign p = site.data.profile %}
+<div class="page-title">
+  <h1>プロフィール</h1>
+  <div class="muted">Profile</div>
+</div>
+
+<dl class="kv">
+  <dt>氏名</dt><dd>{{ a.name_ja }}（{{ a.name_en }}）</dd>
+  <dt>所属</dt><dd>{{ a.affiliation_ja }} {{ a.title_ja }}<br>{{ a.lab_ja }}</dd>
+  <dt>所在地</dt><dd>{{ a.location_ja }}</dd>
+  <dt>連絡先</dt><dd><a href="mailto:{{ a.email }}">{{ a.email }}</a></dd>
+  <dt>リンク</dt><dd>{% for l in site.links %}{% unless l.label == "Email" %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% unless forloop.last %}　{% endunless %}{% endunless %}{% endfor %}</dd>
+</dl>
+
+<h2>研究分野</h2>
+<div class="content"><ul>{% for i in p.interests %}<li>{{ i }}</li>{% endfor %}</ul></div>
+
+<h2>学歴</h2>
+<ul class="timeline">{% for e in p.education %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}</span></li>{% endfor %}</ul>
+
+{% if p.awards.size > 0 %}
+<h2>受賞</h2>
+<ul class="timeline">{% for e in p.awards %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}</span></li>{% endfor %}</ul>
+{% endif %}
+
+{% if p.grants.size > 0 %}
+<h2>研究費・奨学金</h2>
+<ul class="timeline">{% for e in p.grants %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}</span></li>{% endfor %}</ul>
+{% endif %}
+
+{% if p.memberships.size > 0 %}
+<h2>所属学会</h2>
+<div class="content"><ul>{% for m in p.memberships %}<li>{{ m }}</li>{% endfor %}</ul></div>
+{% endif %}

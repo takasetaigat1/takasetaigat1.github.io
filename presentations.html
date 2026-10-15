@@ -1,0 +1,22 @@
+---
+layout: default
+title: 発表
+permalink: /presentations/
+---
+<div class="page-title">
+  <h1>発表リスト</h1>
+  <div class="muted">Presentations</div>
+</div>
+
+<ol class="pubs">
+  {% for pr in site.data.presentations %}
+  <li>
+    <span class="authors">{{ pr.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" }}</span>
+    <span class="ptitle">{{ pr.title }}</span>
+    <span class="journal">
+      {{ pr.meeting }}{% if pr.place %}, {{ pr.place }}{% endif %}, {{ pr.date | date: "%Y/%m" }}{% if pr.type %}（{{ pr.type }}）{% endif %}{% if pr.award %} — <b>{{ pr.award }}</b>{% endif %}
+    </span>
+    {% if pr.url %}<div class="plinks"><a href="{{ pr.url }}" target="_blank" rel="noopener">Link</a></div>{% endif %}
+  </li>
+  {% endfor %}
+</ol>

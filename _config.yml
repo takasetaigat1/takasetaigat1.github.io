@@ -1,0 +1,59 @@
+# ============================================================
+#  サイト設定
+#  ここを書き換えるだけで、全ページの氏名・所属・リンクが変わります
+# ============================================================
+
+title: 高瀬 大河 (Taiga Takase)
+url: "https://takasetaigat1.github.io"
+baseurl: ""                 # ユーザーサイトなので空のまま（行は消さない）
+lang: ja
+
+author:
+  name_ja: 高瀬 大河         # ← 漢字表記を確認して直してください
+  name_en: Taiga Takase
+  title_ja: 博士前期課程
+  affiliation_ja: 東北大学大学院 理学研究科 地学専攻
+  affiliation_en: Department of Earth Science, Graduate School of Science, Tohoku University
+  lab_ja: 中村智樹 研究室
+  lab_en: Nakamura Laboratory
+  location_ja: 宮城県仙台市
+  location_en: Sendai, Japan
+  email: takase.taiga.t1@dc.tohoku.ac.jp
+  photo: /assets/img/profile.jpg   # 顔写真。無ければ空にする → 写真枠が消えます
+
+# トップページ・プロフィールに並ぶ外部リンク（不要な行は消す／URL は要記入）
+links:
+  - label: researchmap
+    url: https://researchmap.jp/
+  - label: ORCID
+    url: https://orcid.org/
+  - label: Google Scholar
+    url: https://scholar.google.com/
+  - label: GitHub
+    url: https://github.com/takasetaigat1
+  - label: Email
+    url: mailto:takase.taiga.t1@dc.tohoku.ac.jp
+
+# ナビゲーション（順番がそのままサイドバーの並び）
+nav:
+  - { label: ホーム,       url: / }
+  - { label: プロフィール, url: /profile/ }
+  - { label: 研究,         url: /research/ }
+  - { label: 出版物,       url: /publications/ }
+  - { label: 発表,         url: /presentations/ }
+  - { label: ニュース,     url: /news/ }
+  - { label: English,     url: /en/ }
+
+# トップページに表示するニュース件数
+home_news_count: 6
+
+# ---- 以下は触らなくてよい設定 ----
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

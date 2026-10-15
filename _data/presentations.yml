@@ -1,0 +1,17 @@
+# 学会発表（新しいものを上に書く）
+#
+# - date: 2026-08
+#   authors: "<me>Takase, T.</me>, Nakamura, T."
+#   title: "発表タイトル"
+#   meeting: "Meteoritical Society 2026"
+#   place: "Perth, Australia"       # 任意
+#   type: 口頭                        # 口頭 / ポスター / 招待 など
+#   award: "学生優秀発表賞"            # 任意
+#   url: ""                          # 任意（要旨など）
+#
+# 以下はサンプル。実際の発表に書き換えてください。
+- date: 2026-08
+  authors: "<me>Takase, T.</me>, Nakamura, T."
+  title: "（サンプル）Shock melt in a Ryugu particle"
+  meeting: "Meteoritical Society 2026"
+  type: 口頭

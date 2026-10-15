@@ -1,0 +1,20 @@
+# 出版物（新しいものを上に書く）
+#
+# 1 件の書き方：
+# - year: 2026
+#   authors: "Takase, T., Nakamura, T., ..."   # 自分の名前は <me>Takase, T.</me> で囲むと太字になる
+#   title: "論文タイトル"
+#   journal: "Icarus"
+#   volume: "420"
+#   pages: "115xxx"
+#   doi: "10.1016/j.icarus.2026.xxxxx"         # 任意
+#   status: "in press"                          # 任意（in press / submitted / in revision など）
+#   pdf: "/assets/pdf/xxx.pdf"                  # 任意
+#   note: "査読あり"                              # 任意
+#
+# 以下はサンプル。実際の論文に書き換えてください。
+- year: 2026
+  authors: "<me>Takase, T.</me>, Nakamura, T., et al."
+  title: "（サンプル）Micro-FTIR comparison of Ryugu and Bennu returned samples"
+  journal: "Icarus"
+  status: "submitted"
