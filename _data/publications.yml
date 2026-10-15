@@ -46,14 +46,14 @@
 # ---- 共著論文 ----
 - category: coauthor
   year: 2026
-  authors: "S. Ishida, T. Nakamura, K. Tsutsui, <me>T. Takase</me>, R. Kawada, K. Amano, M. Matsuoka, M. Matsumoto, Y. Takahashi, T. Kawai, S. Yamashita, Y. Enokido, J. Matsuno, M. Uesugi, E. Tatsumi, M. Ichikawa, X.-D. Zou, K. Sakamoto, S. Tachibana"
+  authors: "S. Ishida et al. (incl. <me>T. Takase</me>)"
   title: "Reflectance spectroscopy of returned samples reveals the aqueous alteration and space weathering histories of carbonaceous asteroids Bennu and Ryugu"
   journal: "Scientific Reports"
   status: "submitted"
 
 - category: coauthor
   year: 2026
-  authors: "H. Onuma, M. Matsumoto, T. Nakamura, K. Amano, <me>T. Takase</me>, K. Ninomiya, H. Nomura"
+  authors: "H. Onuma et al. (incl. <me>T. Takase</me>)"
   title: "Surface modifications of a space-weathered Ryugu sample and the reflectance spectral response"
   journal: "The Planetary Science Journal"
   volume: "7"
