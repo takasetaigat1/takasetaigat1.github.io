@@ -32,7 +32,8 @@ GitHub のリポジトリ画面でファイルを開き、鉛筆アイコン →
 ### 論文の例
 
 ```yaml
-- year: 2026
+- category: first_published      # first_published / first_submitted / coauthor
+  year: 2026
   authors: "<me>Takase, T.</me>, Nakamura, T., Matsumoto, M."
   title: "Micro-FTIR comparison of Ryugu and Bennu samples"
   journal: "Icarus"

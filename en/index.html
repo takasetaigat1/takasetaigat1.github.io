@@ -33,11 +33,11 @@ permalink: /en/
 
 <h2>Publications <a href="{{ '/publications/' | relative_url }}">Full list →</a></h2>
 <ol class="pubs">
-  {% for pb in site.data.publications limit: 5 %}
+  {% for pb in site.data.publications %}
   <li>
     <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" }}</span>
     <span class="ptitle">{{ pb.title }}</span>
-    <span class="journal"><i>{{ pb.journal }}</i>{% if pb.volume %}, {{ pb.volume }}{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %} ({{ pb.status }}){% endif %}, {{ pb.year }}</span>
+    <span class="journal"><i>{{ pb.journal }}</i>{% if pb.volume %}, {{ pb.volume }}{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %} ({{ pb.status }}){% else %}, {{ pb.year }}{% endif %}</span>
     {% if pb.doi %}<div class="plinks"><a href="https://doi.org/{{ pb.doi }}" target="_blank" rel="noopener">DOI</a></div>{% endif %}
   </li>
   {% endfor %}

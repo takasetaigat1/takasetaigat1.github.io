@@ -1,24 +1,42 @@
-# 出版物（新しいものを上に書く）
+# 出版物（各区分の中で新しいものを上に書く）
+#
+# category は次の3つのどれか（ページ上でこの順に表示されます）
+#   first_published : 主著（出版済み）
+#   first_submitted : 主著（投稿中）
+#   coauthor        : 共著
 #
 # 1 件の書き方：
-# - year: 2026
-#   authors: "Takase, T., Nakamura, T., ..."   # 自分の名前は <me>Takase, T.</me> で囲むと太字になる
+# - category: first_published
+#   year: 2026
+#   authors: "<me>Takase, T.</me>, Nakamura, T., ..."   # <me>…</me> で囲むと太字
 #   title: "論文タイトル"
 #   journal: "Icarus"
-#   volume: "420"
-#   pages: "115xxx"
-#   doi: "10.1016/j.icarus.2026.xxxxx"         # 任意
-#   status: "in press"                          # 任意（in press / submitted / in revision など）
-#   pdf: "/assets/pdf/xxx.pdf"                  # 任意
-#   note: "査読あり"                              # 任意
+#   volume: "420"           # 任意
+#   pages: "115xxx"         # 任意
+#   doi: "10.1016/..."      # 任意
+#   status: "submitted"     # 任意（submitted / in revision / in press など）
+#   pdf: "/assets/pdf/xxx.pdf"   # 任意
+#
+# 主著の投稿中論文が出版されたら category を first_published に変え、status を消して doi を入れる。
 
-- year: 2026
+# ---- 主著（投稿中） ----
+- category: first_submitted
+  year: 2026
+  authors: "<me>Takase, T.</me>, Nakamura, T., Fukuda, Y., Tsutsui, K., Ishida, S., Kawada, R., Amano, K., Enokido, Y., Sakamoto, K., Tachibana, S."
+  title: "Submillimeter-scale diversity of near- to mid-infrared reflectance spectra within samples from asteroids Ryugu and Bennu: Records of space weathering and aqueous alteration"
+  journal: "Icarus"
+  status: "submitted"
+
+# ---- 共著 ----
+- category: coauthor
+  year: 2026
   authors: "Ishida, S., et al. (<me>Takase, T.</me>, 4th of 19 authors)"
-  title: "Interpreting reflectance spectral differences between the carbonaceous asteroids Bennu and Ryugu based on the returned samples"
+  title: "Reflectance spectroscopy of returned samples reveals the aqueous alteration and space weathering histories of carbonaceous asteroids Bennu and Ryugu"
   journal: "Scientific Reports"
   status: "submitted"
 
-- year: 2026
+- category: coauthor
+  year: 2026
   authors: "Onuma, H., Matsumoto, M., Nakamura, T., Amano, K., <me>Takase, T.</me>, Ninomiya, K., Nomura, H."
   title: "Surface Modifications of a Space-weathered Ryugu Sample and the Reflectance Spectral Response"
   journal: "The Planetary Science Journal"

@@ -5,28 +5,34 @@ permalink: /publications/
 ---
 <div class="page-title">
   <h1>出版物リスト</h1>
-  <div class="muted">Publications（査読付き論文）</div>
+  <div class="muted">Publications</div>
 </div>
 
-{% assign groups = site.data.publications | group_by: "year" %}
-{% for g in groups %}
-<h2 class="year-head">{{ g.name }}</h2>
-<ol class="pubs">
-  {% for pb in g.items %}
-  <li>
-    <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" }}</span>
-    <span class="ptitle">{{ pb.title }}</span>
-    <span class="journal">
-      <i>{{ pb.journal }}</i>{% if pb.volume %}, {{ pb.volume }}{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %}（{{ pb.status }}）{% endif %}{% if pb.note %} — {{ pb.note }}{% endif %}
-    </span>
-    {% if pb.doi or pb.pdf or pb.url %}
-    <div class="plinks">
-      {% if pb.doi %}<a href="https://doi.org/{{ pb.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
-      {% if pb.url %}<a href="{{ pb.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
-      {% if pb.pdf %}<a href="{{ pb.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
-    </div>
-    {% endif %}
-  </li>
-  {% endfor %}
-</ol>
+{% assign sections = "first_published|主著（出版済み）,first_submitted|主著（投稿中）,coauthor|共著" | split: "," %}
+{% for s in sections %}
+  {% assign pair = s | split: "|" %}
+  {% assign key = pair[0] %}
+  {% assign label = pair[1] %}
+  {% assign items = site.data.publications | where: "category", key %}
+  {% if items.size > 0 %}
+  <h2>{{ label }}</h2>
+  <ol class="pubs">
+    {% for pb in items %}
+    <li>
+      <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" }}</span>
+      <span class="ptitle">{{ pb.title }}</span>
+      <span class="journal">
+        <i>{{ pb.journal }}</i>{% if pb.volume %}, {{ pb.volume }}{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %}（{{ pb.status }}）{% else %}, {{ pb.year }}{% endif %}{% if pb.note %} — {{ pb.note }}{% endif %}
+      </span>
+      {% if pb.doi or pb.pdf or pb.url %}
+      <div class="plinks">
+        {% if pb.doi %}<a href="https://doi.org/{{ pb.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+        {% if pb.url %}<a href="{{ pb.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
+        {% if pb.pdf %}<a href="{{ pb.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
 {% endfor %}
