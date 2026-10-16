@@ -1,5 +1,6 @@
 # ニュース（新しいものを上に書く）
-# date: YYYY-MM-DD  text: 本文  tag: 任意（発表 / 論文 / 受賞 / お知らせ など）  url: 任意
+# date: YYYY-MM-DD  text: 本文  text_en: 英語（任意）  tag: 任意（発表 / 論文 / 受賞 / お知らせ など）  url: 任意
 - date: 2027-04-01
   text: ウェブサイトを公開しました
+  text_en: Website launched
   tag: お知らせ

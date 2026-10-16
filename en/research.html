@@ -1,0 +1,20 @@
+---
+layout: default
+title: Research
+lang: en
+permalink: /en/research/
+---
+<div class="page-title">
+  <h1>Research</h1>
+</div>
+
+{% for t in site.data.topics %}
+<div class="research-item">
+  <div>
+    <h3>{{ t.title_en | default: t.title }}</h3>
+    <div class="content">{{ t.body_en | default: t.body | markdownify }}</div>
+    {% if t.methods_en or t.methods %}<div class="methods">Methods: {{ t.methods_en | default: t.methods }}</div>{% endif %}
+  </div>
+  {% if t.image %}<img class="fig" src="{{ t.image | relative_url }}" alt="{{ t.title_en | default: t.title }}" onerror="this.removeAttribute('src')">{% endif %}
+</div>
+{% endfor %}

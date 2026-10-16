@@ -4,20 +4,33 @@
 #   short: トップページ用の一行説明
 #   body: |
 #     「研究」ページ用の本文。Markdown が使えます。複数段落OK。
+#   title_en / short_en / body_en: 英語ページ用（任意。無ければ日本語のまま）
 #   methods: 使う手法（任意）
 #   image: /assets/img/research/xxx.jpg   （任意。無ければ灰色の枠が出ます。枠を消すなら行ごと削除）
 
 - title: AAA
+  title_en: AAA
   short: AAA の一行説明（仮）
+  short_en: One-line description of AAA (placeholder)
   body: |
     AAA の本文（仮）。後で書き換えます。
+  body_en: |
+    Body text for AAA (placeholder).
 
 - title: BBB
+  title_en: BBB
   short: BBB の一行説明（仮）
+  short_en: One-line description of BBB (placeholder)
   body: |
     BBB の本文（仮）。後で書き換えます。
+  body_en: |
+    Body text for BBB (placeholder).
 
 - title: CCC
+  title_en: CCC
   short: CCC の一行説明（仮）
+  short_en: One-line description of CCC (placeholder)
   body: |
     CCC の本文（仮）。後で書き換えます。
+  body_en: |
+    Body text for CCC (placeholder).

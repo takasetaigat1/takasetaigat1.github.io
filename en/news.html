@@ -1,0 +1,18 @@
+---
+layout: default
+title: News
+lang: en
+permalink: /en/news/
+---
+<div class="page-title">
+  <h1>News</h1>
+</div>
+
+<ul class="dlist">
+  {% for n in site.data.news %}
+  <li>
+    <span class="dt">{{ n.date | date: "%Y/%m/%d" }}</span>
+    <span>{% assign t = n.text_en | default: n.text %}{% if n.url %}<a href="{{ n.url }}">{{ t }}</a>{% else %}{{ t }}{% endif %}</span>
+  </li>
+  {% endfor %}
+</ul>

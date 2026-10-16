@@ -1,0 +1,37 @@
+---
+layout: default
+title: Profile
+lang: en
+permalink: /en/profile/
+---
+{% assign a = site.author %}{% assign p = site.data.profile %}
+<div class="page-title">
+  <h1>Profile</h1>
+</div>
+
+<dl class="kv">
+  <dt>Affiliation</dt><dd>{{ a.lab_en }}, {{ a.affiliation_en }}<br>Ph.D. course</dd>
+  <dt>Contact</dt><dd><a href="mailto:{{ a.email }}">{{ a.email }}</a><br>{{ a.address_en }}</dd>
+  <dt>Links</dt><dd class="links" style="margin:0">{% for l in site.links %}{% unless l.label == "Email" %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endunless %}{% endfor %}</dd>
+</dl>
+
+<h2>Research interests</h2>
+<div class="content"><ul>{% for i in p.interests_en %}<li>{{ i }}</li>{% endfor %}</ul></div>
+
+<h2>Career</h2>
+<ul class="timeline">{% for e in p.career %}<li><span class="dt">{{ e.period_en | default: e.period }}</span><span>{{ e.text_en | default: e.text }}</span></li>{% endfor %}</ul>
+
+{% if p.awards.size > 0 %}
+<h2>Awards</h2>
+<ul class="timeline">{% for e in p.awards %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text_en | default: e.text }}{% if e.sub %} <span class="sub">{{ e.sub_en | default: e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
+{% endif %}
+
+{% if p.grants.size > 0 %}
+<h2>Grants and funding</h2>
+<ul class="timeline">{% for e in p.grants %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text_en | default: e.text }}{% if e.sub %}<br><span class="sub">{{ e.sub_en | default: e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
+{% endif %}
+
+{% if p.memberships_en.size > 0 %}
+<h2>Memberships</h2>
+<div class="content"><ul>{% for m in p.memberships_en %}<li>{{ m }}</li>{% endfor %}</ul></div>
+{% endif %}

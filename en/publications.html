@@ -1,0 +1,34 @@
+---
+layout: default
+title: Publications
+lang: en
+permalink: /en/publications/
+---
+<div class="page-title">
+  <h1>Publications</h1>
+</div>
+
+{% assign sections = "first_published|First-author papers (published),first_submitted|First-author papers (submitted),coauthor|Co-authored papers" | split: "," %}
+{% for s in sections %}
+  {% assign pair = s | split: "|" %}
+  {% assign key = pair[0] %}
+  {% assign label = pair[1] %}
+  {% assign items = site.data.publications | where: "category", key %}
+  {% if items.size > 0 %}
+  <h2>{{ label }}</h2>
+  <ol class="pubs">
+    {% for pb in items %}{% assign n = items.size | minus: forloop.index0 %}
+    <li>
+      <span class="num">[{{ n }}]</span>
+      <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" | replace: "et al.", "<i>et al.</i>" }} ({{ pb.year }})</span>
+      {% assign link = "" %}{% if pb.doi %}{% assign link = "https://doi.org/" | append: pb.doi %}{% elsif pb.url %}{% assign link = pb.url %}{% endif %}
+      <span class="ptitle">{% if link != "" %}<a href="{{ link }}" target="_blank" rel="noopener">{{ pb.title }}</a>{% else %}{{ pb.title }}{% endif %}</span>
+      <span class="journal">
+        {% if pb.status == "submitted" %}Submitted to <i>{{ pb.journal }}</i>{% else %}<i>{{ pb.journal }}</i>{% if pb.volume %} <b>{{ pb.volume }}</b>{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %} ({{ pb.status }}){% else %}, {{ pb.year }}{% endif %}{% endif %}{% if pb.note %} — {{ pb.note }}{% endif %}
+      </span>
+      {% if pb.pdf %}<div class="plinks"><a href="{{ pb.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a></div>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+{% endfor %}

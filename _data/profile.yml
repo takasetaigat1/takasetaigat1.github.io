@@ -1,19 +1,29 @@
 # プロフィールページの内容
 # 日付は "2025.04" のような文字列でOK。不要な項目は行ごと消してください。
+# *_en は英語ページ用。無ければ日本語がそのまま出ます。
 
 interests:
   - 小惑星リターンサンプル・隕石の鉱物学的分析
   - 探査機リモートセンシング観測データの解析
+interests_en:
+  - Mineralogical analysis of returned asteroid samples and meteorites
+  - Analysis of remote-sensing data from planetary exploration missions
 
 career:
   - period: 2027.04 – 現在
+    period_en: 2027.04 – present
     text: 東北大学 理学研究科 地学専攻 博士課程
+    text_en: Ph.D. course, Department of Earth Science, Tohoku University
   - period: 2027.04 – 現在
+    period_en: 2027.04 – present
     text: 日本学術振興会 特別研究員（DC1）
+    text_en: JSPS Research Fellow (DC1)
   - period: 2025.04 – 2027.03
     text: 東北大学 理学研究科 地学専攻 修士課程
+    text_en: M.S. course, Department of Earth Science, Tohoku University
   - period: 2021.04 – 2025.03
     text: 東北大学 理学部 地球惑星物質科学科
+    text_en: B.S., Department of Earth and Planetary Materials Science, Tohoku University
 
 awards:
   - period: 2026.08
@@ -21,23 +31,30 @@ awards:
     sub: The 88th Annual Meeting of the Meteoritical Society
   - period: 2025.09
     text: 学生奨励賞
+    text_en: Student Award
     sub: 日本地球化学会 第72回年会
+    sub_en: 72nd Annual Meeting of the Geochemical Society of Japan
   - period: 2025.07
     text: Barringer Crater Travel Award
     sub: The 87th Annual Meeting of the Meteoritical Society
   - period: 2024.09
     text: 優秀発表賞
+    text_en: Best Presentation Award
     sub: 日本宇宙生物科学会 第38回大会
+    sub_en: 38th Annual Meeting of the Japanese Society for Biological Sciences in Space
 
 # 競争的資金等（sub: は任意。課題名などを2行目に薄字で表示）
 grants:
   - period: 2027.04 –
     text: 日本学術振興会 特別研究員奨励費（240万円／3年）
+    text_en: JSPS Grant-in-Aid for JSPS Fellows (2.4 million JPY / 3 years)
   - period: 2026.12
     text: JAXA 小惑星Bennu試料研究公募（AO2026）採択
+    text_en: JAXA Announcement of Opportunity for Bennu samples (AO2026), selected
     sub: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering"
   - period: 2025.04 –
     text: 東北大学 変動地球共生学卓越大学院プログラム
+    text_en: WISE Program for Sustainability in the Dynamic Earth, Tohoku University
 
 activities: []
 
@@ -47,3 +64,9 @@ memberships:
   - 日本地球惑星科学連合
   - 日本地球化学会
   - 日本質量分析学会
+memberships_en:
+  - The Meteoritical Society
+  - Japanese Society for Planetary Sciences
+  - Japan Geoscience Union
+  - Geochemical Society of Japan
+  - Mass Spectrometry Society of Japan

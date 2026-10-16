@@ -1,17 +1,15 @@
 ---
 layout: default
-title: English
+title: Home
 lang: en
 permalink: /en/
+description: Mineralogy of returned asteroid samples
 ---
 {% assign a = site.author %}
 <section class="hero{% if a.photo == blank %} no-photo{% endif %}">
   <div>
     <h1>{{ a.name_en }}<small>{{ a.name_ja }}</small></h1>
-    <div class="aff">
-      {{ a.affiliation_en }}<br>
-      {{ a.position_en }}
-    </div>
+    <div class="aff">{{ a.affiliation_en }}<br>{{ a.position_en }}</div>
     <p class="lead">
       My main work is the analysis of samples returned from asteroids.
       Through electron microscopy, spectroscopy, and synchrotron-based analysis,
@@ -25,25 +23,19 @@ permalink: /en/
   {% if a.photo != blank %}<img class="photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_en }}">{% endif %}
 </section>
 
-<h2>Research interests</h2>
-<div class="content"><ul>
-  <li>Mineralogical analysis of returned asteroid samples and meteorites</li>
-  <li>Analysis of remote-sensing data from planetary exploration missions</li>
-</ul></div>
+<h2>Research topics <a href="{{ '/en/research/' | relative_url }}">More →</a></h2>
+<div class="topics">
+  {% for t in site.data.topics limit: 3 %}
+  <div><b>{{ t.title_en | default: t.title }}</b><span>{{ t.short_en | default: t.short }}</span></div>
+  {% endfor %}
+</div>
 
-<h2>Publications <a href="{{ '/publications/' | relative_url }}">Full list →</a></h2>
-<ol class="pubs">
-  {% for pb in site.data.publications %}
+<h2>News <a href="{{ '/en/news/' | relative_url }}">All news →</a></h2>
+<ul class="dlist">
+  {% for n in site.data.news limit: site.home_news_count %}
   <li>
-    <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" | replace: "et al.", "<i>et al.</i>" }} ({{ pb.year }})</span>
-    {% assign link = "" %}{% if pb.doi %}{% assign link = "https://doi.org/" | append: pb.doi %}{% elsif pb.url %}{% assign link = pb.url %}{% endif %}
-    <span class="ptitle">{% if link != "" %}<a href="{{ link }}" target="_blank" rel="noopener">{{ pb.title }}</a>{% else %}{{ pb.title }}{% endif %}</span>
-    <span class="journal">{% if pb.status == "submitted" %}Submitted to <i>{{ pb.journal }}</i>{% else %}<i>{{ pb.journal }}</i>{% if pb.volume %} <b>{{ pb.volume }}</b>{% endif %}{% if pb.pages %}, {{ pb.pages }}{% endif %}{% if pb.status %} ({{ pb.status }}){% else %}, {{ pb.year }}{% endif %}{% endif %}</span>
+    <span class="dt">{{ n.date | date: "%Y/%m/%d" }}</span>
+    <span>{% assign t = n.text_en | default: n.text %}{% if n.url %}<a href="{{ n.url }}">{{ t }}</a>{% else %}{{ t }}{% endif %}</span>
   </li>
   {% endfor %}
-</ol>
-
-<h2>Contact</h2>
-<p>{{ a.affiliation_en }}<br>
-{{ a.address_en }}<br>
-<a href="mailto:{{ a.email }}">{{ a.email }}</a></p>
+</ul>

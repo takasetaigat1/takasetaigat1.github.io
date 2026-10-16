@@ -1,17 +1,18 @@
 {% if page.lang == "en" %}{% assign is_en = true %}{% else %}{% assign is_en = false %}{% endif %}
 <aside class="side">
   <div class="side-head">
-    <a class="side-name" href="{{ '/' | relative_url }}">
+    <a class="side-name" href="{% if is_en %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
       {% if is_en %}{{ site.author.name_en }}{% else %}{{ site.author.name_ja }}{% endif %}
     </a>
     <div class="side-sub">{% if is_en %}{{ site.author.name_ja }}{% else %}{{ site.author.name_en }}{% endif %}</div>
     <button class="nav-toggle" aria-label="menu" aria-expanded="false"><span></span><span></span></button>
   </div>
+  {% if is_en %}{% assign navitems = site.nav_en %}{% else %}{% assign navitems = site.nav %}{% endif %}
   <nav class="side-nav">
-    {% for item in site.nav %}
+    {% for item in navitems %}
       {% assign active = false %}
-      {% if item.url == "/" %}
-        {% if page.url == "/" %}{% assign active = true %}{% endif %}
+      {% if item.url == "/" or item.url == "/en/" %}
+        {% if page.url == item.url %}{% assign active = true %}{% endif %}
       {% elsif page.url contains item.url %}
         {% assign active = true %}
       {% endif %}
@@ -19,6 +20,7 @@
     {% endfor %}
   </nav>
   <div class="lang-switch" role="group" aria-label="language">
-    <a href="{{ '/' | relative_url }}" class="{% unless is_en %}on{% endunless %}">日本語</a><a href="{{ '/en/' | relative_url }}" class="{% if is_en %}on{% endif %}">English</a>
+    {% if is_en %}{% assign ja_url = page.url | remove_first: "/en" %}{% if ja_url == "" %}{% assign ja_url = "/" %}{% endif %}{% assign en_url = page.url %}{% else %}{% assign ja_url = page.url %}{% assign en_url = "/en" | append: page.url %}{% endif %}
+    <a href="{{ ja_url | relative_url }}" class="{% unless is_en %}on{% endunless %}">日本語</a><a href="{{ en_url | relative_url }}" class="{% if is_en %}on{% endif %}">English</a>
   </div>
 </aside>

@@ -9,6 +9,7 @@
 #   type: 口頭                        # 口頭 / ポスター / 招待 など
 #   award: "学生奨励賞"                # 任意
 #   url: ""                          # 任意（要旨など）
+#   title_en / authors_en / meeting_en / place_en / award_en: 英語ページ用（日本語発表のみ。無ければ日本語のまま）
 
 - date: 2026-10
   scope: international
@@ -38,16 +39,23 @@
   scope: international
   authors: "<me>髙瀬大河</me>，松本恵，中村智樹，福田佳乃，川田理栄仁，石田世実，山下翔平，高橋嘉夫"
   title: "小惑星 Ryugu 試料に含まれる衝撃溶融物の鉱物学的分析"
+  title_en: "Mineralogical study of shock melt in the sample from asteroid Ryugu"
+  authors_en: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, Y. Fukuda, R. Kawada, S. Ishida, S. Yamashita, and Y. Takahashi"
   meeting: "JpGU–AGU Joint Meeting 2026"
   place: "幕張"
+  place_en: "Makuhari, Japan"
   type: 口頭
 
 - date: 2026-03
   scope: domestic
   authors: "<me>髙瀬大河</me>，松本恵，中村智樹，福田佳乃，川田理栄仁，石田世実，山下翔平，高橋嘉夫，榎戸祐馬，坂本佳奈子，橘省吾"
   title: "小惑星 Ryugu・Bennu 試料に含まれる NH4–Na–Mg リン酸塩の形成進化過程"
+  title_en: "Formation and evolution of NH4–Na–Mg phosphates in samples from asteroids Ryugu and Bennu"
+  authors_en: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, Y. Fukuda, R. Kawada, S. Ishida, S. Yamashita, Y. Takahashi, Y. Enokido, K. Sakamoto, and S. Tachibana"
   meeting: "2025年度 地球化学会若手会「春の研究会」"
+  meeting_en: "Spring Meeting of the Young Researchers' Group, Geochemical Society of Japan"
   place: "名古屋"
+  place_en: "Nagoya, Japan"
   type: ポスター
 
 - date: 2025-11
@@ -70,10 +78,15 @@
   scope: domestic
   authors: "<me>髙瀬大河</me>，松本恵，中村智樹，福田佳乃，川田理栄仁，石田世実，山下翔平，高橋嘉夫，榎戸祐馬，坂本佳奈子，橘省吾"
   title: "小惑星 Ryugu・Bennu 試料中の非晶質 Na–Mg リン酸塩相の化学的特徴"
+  title_en: "Chemical characteristics of amorphous Na–Mg phosphate phases in samples from asteroids Ryugu and Bennu"
+  authors_en: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, Y. Fukuda, R. Kawada, S. Ishida, S. Yamashita, Y. Takahashi, Y. Enokido, K. Sakamoto, and S. Tachibana"
   meeting: "日本地球化学会 第72回年会"
+  meeting_en: "72nd Annual Meeting of the Geochemical Society of Japan"
   place: "仙台"
+  place_en: "Sendai, Japan"
   type: 口頭
   award: "学生奨励賞"
+  award_en: "Student Award"
 
 - date: 2025-07
   scope: international
@@ -104,15 +117,24 @@
   scope: domestic
   authors: "<me>髙瀬大河</me>，平井大源，濵田莉来，小津輝虎，堀江優菜，古川こと葉"
   title: "火星を想定した環境下でのローバーによる簡易的な土壌試料採取・生命探査機構の開発"
+  title_en: "Development of a simple soil-sampling and life-detection mechanism for a rover in a simulated Martian environment"
+  authors_en: "<me>T. Takase</me>, D. Hirai, R. Hamada, K. Ozu, Y. Horie, and K. Furukawa"
   meeting: "第68回 宇宙科学技術連合講演会"
+  meeting_en: "68th Space Sciences and Technology Conference"
   place: "姫路"
+  place_en: "Himeji, Japan"
   type: ポスター
 
 - date: 2024-09
   scope: domestic
   authors: "<me>髙瀬大河</me>，平井大源，濵田莉来，小津輝虎，堀江優菜，古川こと葉"
   title: "惑星探査ローバによる簡易的な生命探査機構の開発：土壌試料の化学分析・特性評価"
+  title_en: "Development of a simple life-detection mechanism for a planetary rover: chemical analysis and characterization of soil samples"
+  authors_en: "<me>T. Takase</me>, D. Hirai, R. Hamada, K. Ozu, Y. Horie, and K. Furukawa"
   meeting: "日本宇宙生物科学会 第38回大会"
+  meeting_en: "38th Annual Meeting of the Japanese Society for Biological Sciences in Space"
   place: "山形"
+  place_en: "Yamagata, Japan"
   type: 口頭
   award: "優秀発表賞"
+  award_en: "Best Presentation Award"

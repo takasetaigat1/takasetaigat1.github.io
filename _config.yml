@@ -40,6 +40,15 @@ nav:
   - { label: 学会発表, url: /presentations/ }
   - { label: ニュース,     url: /news/ }
 
+# 英語ページのナビゲーション
+nav_en:
+  - { label: Home,          url: /en/ }
+  - { label: Profile,       url: /en/profile/ }
+  - { label: Research,      url: /en/research/ }
+  - { label: Publications,  url: /en/publications/ }
+  - { label: Presentations, url: /en/presentations/ }
+  - { label: News,          url: /en/news/ }
+
 # トップページに表示するニュース件数
 home_news_count: 6
 
