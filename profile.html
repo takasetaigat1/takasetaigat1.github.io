@@ -10,7 +10,7 @@ permalink: /profile/
 </div>
 
 <dl class="kv">
-  <dt>所属</dt><dd>{{ a.affiliation_ja }} {{ a.lab_ja }}<br>博士課程</dd>
+  <dt>所属</dt><dd>{{ a.affiliation_ja }}<br>{{ a.lab_ja }}<br>博士課程</dd>
   <dt>連絡先</dt><dd><a href="mailto:{{ a.email }}">{{ a.email }}</a><br>{{ a.address_ja }}</dd>
   <dt>リンク</dt><dd class="links" style="margin:0">{% for l in site.links %}{% unless l.label == "Email" %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endunless %}{% endfor %}</dd>
 </dl>
