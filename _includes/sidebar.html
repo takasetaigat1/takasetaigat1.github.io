@@ -5,6 +5,7 @@
       {% if is_en %}{{ site.author.name_en }}{% else %}{{ site.author.name_ja }}{% endif %}
     </a>
     <div class="side-sub">{% if is_en %}{{ site.author.name_ja }}{% else %}{{ site.author.name_en }}{% endif %}</div>
+    {% include lang_switch.html class="lang-mobile" %}
     <button class="nav-toggle" aria-label="menu" aria-expanded="false"><span></span><span></span></button>
   </div>
   {% if is_en %}{% assign navitems = site.nav_en %}{% else %}{% assign navitems = site.nav %}{% endif %}
@@ -19,8 +20,4 @@
       <a class="nv{% if active %} on{% endif %}" href="{{ item.url | relative_url }}">{{ item.label }}</a>
     {% endfor %}
   </nav>
-  <div class="lang-switch" role="group" aria-label="language">
-    {% if is_en %}{% assign ja_url = page.url | remove_first: "/en" %}{% if ja_url == "" %}{% assign ja_url = "/" %}{% endif %}{% assign en_url = page.url %}{% else %}{% assign ja_url = page.url %}{% assign en_url = "/en" | append: page.url %}{% endif %}
-    <a href="{{ ja_url | relative_url }}" class="{% unless is_en %}on{% endunless %}">日本語</a><a href="{{ en_url | relative_url }}" class="{% if is_en %}on{% endif %}">English</a>
-  </div>
 </aside>

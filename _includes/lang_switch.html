@@ -1,0 +1,5 @@
+{% if page.lang == "en" %}{% assign is_en = true %}{% else %}{% assign is_en = false %}{% endif %}
+{% if is_en %}{% assign ja_url = page.url | remove_first: "/en" %}{% if ja_url == "" %}{% assign ja_url = "/" %}{% endif %}{% assign en_url = page.url %}{% else %}{% assign ja_url = page.url %}{% assign en_url = "/en" | append: page.url %}{% endif %}
+<div class="lang-switch {{ include.class | default: class }}" role="group" aria-label="language">
+  <a href="{{ ja_url | relative_url }}" class="{% unless is_en %}on{% endunless %}">日本語</a><a href="{{ en_url | relative_url }}" class="{% if is_en %}on{% endif %}">English</a>
+</div>

@@ -36,7 +36,7 @@ nav:
   - { label: ホーム,       url: / }
   - { label: プロフィール, url: /profile/ }
   - { label: 研究,         url: /research/ }
-  - { label: 出版物,       url: /publications/ }
+  - { label: 論文,         url: /publications/ }
   - { label: 学会発表, url: /presentations/ }
   - { label: ニュース,     url: /news/ }
 

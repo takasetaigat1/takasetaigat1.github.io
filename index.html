@@ -3,7 +3,7 @@ layout: default
 description: 小惑星リターンサンプルの分析研究
 ---
 {% assign a = site.author %}
-<section class="hero{% if a.photo == blank %} no-photo{% endif %}">
+<section class="hero{% unless a.photo %} no-photo{% endunless %}">
   <div>
     <h1>{{ a.name_ja }}<small>{{ a.name_en }}</small></h1>
     <div class="aff">{{ a.affiliation_ja }}<br>{{ a.position_ja }}</div>
@@ -16,7 +16,7 @@ description: 小惑星リターンサンプルの分析研究
       {% for l in site.links %}<a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>{% endfor %}
     </div>
   </div>
-  {% if a.photo != blank %}<img class="photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_ja }}">{% endif %}
+  {% if a.photo %}<img class="photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_ja }}">{% endif %}
 </section>
 
 <h2>研究テーマ <a href="{{ '/research/' | relative_url }}">研究内容 →</a></h2>

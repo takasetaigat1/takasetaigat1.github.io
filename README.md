@@ -12,7 +12,7 @@ GitHub のリポジトリ画面でファイルを開き、鉛筆アイコン →
 |---|---|
 | 氏名・所属・メール・外部リンク・ナビ | `_config.yml` |
 | ニュースを足す | `_data/news.yml`（一番上に追記） |
-| 論文を足す | `_data/publications.yml`（一番上に追記） |
+| 論文を足す | `_data/publications.yml`（区分ごとに一番上に追記） |
 | 学会発表を足す | `_data/presentations.yml`（一番上に追記） |
 | 研究テーマの文章・図 | `_data/topics.yml`、図は `assets/img/research/` に置く |
 | 経歴・受賞・研究費・活動 | `_data/profile.yml` |

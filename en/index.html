@@ -6,7 +6,7 @@ permalink: /en/
 description: Mineralogy of returned asteroid samples
 ---
 {% assign a = site.author %}
-<section class="hero{% if a.photo == blank %} no-photo{% endif %}">
+<section class="hero{% unless a.photo %} no-photo{% endunless %}">
   <div>
     <h1>{{ a.name_en }}<small>{{ a.name_ja }}</small></h1>
     <div class="aff">{{ a.affiliation_en }}<br>{{ a.position_en }}</div>
@@ -20,7 +20,7 @@ description: Mineralogy of returned asteroid samples
       {% for l in site.links %}<a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a>{% endfor %}
     </div>
   </div>
-  {% if a.photo != blank %}<img class="photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_en }}">{% endif %}
+  {% if a.photo %}<img class="photo" src="{{ a.photo | relative_url }}" alt="{{ a.name_en }}">{% endif %}
 </section>
 
 <h2>Research topics <a href="{{ '/en/research/' | relative_url }}">More →</a></h2>

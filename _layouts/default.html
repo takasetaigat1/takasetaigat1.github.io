@@ -16,6 +16,7 @@
 <div class="wrap">
   {% include sidebar.html %}
   <main class="main">
+    {% include lang_switch.html class="lang-top" %}
     {{ content }}
     <footer class="foot">
       <span>© {{ site.time | date: "%Y" }} {{ site.author.name_en }}</span>
