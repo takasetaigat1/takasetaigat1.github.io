@@ -49,8 +49,9 @@ grants:
     sub: "探査機観測と回収試料から解明するC型小惑星の宇宙風化によるスペクトルの時間変化"
     sub_en: "Spectral evolution of C-type asteroids driven by space weathering, revealed from spacecraft observations and returned samples"
   - period: 2027.04 – 2028.03
-    text: The Meteoritical Society Research Grant
-    sub: "Behavior of phosphorus during space weathering: TEM study of phosphate and phosphide in a space-weathered Ryugu particle"
+    text: The Meteoritical Society Research Grant（3,000 USD／1年）
+    text_en: The Meteoritical Society Research Grant (3,000 USD / 1 year)
+    sub: "Behavior of phosphorus during space weathering: TEM study of phosphate and phosphide on a space-weathered Ryugu particle"
   - period: 2026.12
     text: JAXA 小惑星Bennu試料研究公募（AO2026）採択
     text_en: JAXA Announcement of Opportunity for Bennu samples (AO2026)
