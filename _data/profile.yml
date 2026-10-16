@@ -32,7 +32,7 @@ awards:
 # 競争的資金等（sub: は任意。課題名などを2行目に薄字で表示）
 grants:
   - period: 2027.04 –
-    text: 日本学術振興会 特別研究員奨励費
+    text: 日本学術振興会 特別研究員 研究奨励費（240万円／3年）
   - period: 2026.12
     text: JAXA 小惑星Bennu試料研究公募（AO2026）採択
     sub: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering"
