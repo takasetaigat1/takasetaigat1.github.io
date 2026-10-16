@@ -12,14 +12,11 @@
   --line:     #e6e8ea;   /* 罫線 */
   --bg:       #ffffff;
   --bg-2:     #f7f8f8;
-  /* 欧文は IBM Plex Sans、和文は IBM Plex Sans JP（いずれも Web フォント）。読み込めない環境ではヒラギノ / Noto Sans JP */
-  --sans:  "IBM Plex Sans", "IBM Plex Sans JP", "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  /* 欧文は Arial、和文は IBM Plex Sans JP（Web フォント）。読み込めない環境ではヒラギノ / Noto Sans JP */
+  --sans:  Arial, "IBM Plex Sans JP", "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
   --serif: var(--sans);
   --side-w: 250px;
 }
-
-/* 英語ページは欧文を Arial に（和文が混ざる箇所は IBM Plex Sans JP） */
-html[lang="en"] { --sans: Arial, "IBM Plex Sans JP", "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif; }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { -webkit-text-size-adjust: 100%; }
