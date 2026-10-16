@@ -19,7 +19,7 @@ permalink: /presentations/
   <ol class="pubs">
     {% for pr in items %}{% assign n = items.size | minus: forloop.index0 %}
     <li>
-      <span class="num">[{{ n }}]</span>
+      <span class="num">{{ n }}.</span>
       <span class="authors">{{ pr.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" | replace: "et al.", "<i>et al.</i>" }}</span>
       <span class="ptitle">{{ pr.title }}</span>
       <span class="journal">
