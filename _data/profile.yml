@@ -35,6 +35,12 @@ grants:
   - period: 2025.04 –
     text: 東北大学 変動地球共生学卓越大学院プログラム
 
+# 採択課題（研究費・助成とは別枠）。sub: に課題名
+projects:
+  - period: 2026.12 –
+    text: JAXA 小惑星リターンサンプル分析公募（AO）採択
+    sub: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering"
+
 activities: []
 
 memberships:

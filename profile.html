@@ -31,6 +31,11 @@ permalink: /profile/
 <ul class="timeline">{% for e in p.grants %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}</span></li>{% endfor %}</ul>
 {% endif %}
 
+{% if p.projects.size > 0 %}
+<h2>採択課題</h2>
+<ul class="timeline">{% for e in p.projects %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}{% if e.sub %}<br><span class="sub">{{ e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
+{% endif %}
+
 {% if p.activities.size > 0 %}
 <h2>活動</h2>
 <div class="content"><ul>{% for m in p.activities %}<li>{{ m }}</li>{% endfor %}</ul></div>
