@@ -27,13 +27,8 @@ permalink: /profile/
 {% endif %}
 
 {% if p.grants.size > 0 %}
-<h2>研究費・助成</h2>
-<ul class="timeline">{% for e in p.grants %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}</span></li>{% endfor %}</ul>
-{% endif %}
-
-{% if p.projects.size > 0 %}
-<h2>採択課題</h2>
-<ul class="timeline">{% for e in p.projects %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}{% if e.sub %}<br><span class="sub">{{ e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
+<h2>研究費・研究課題</h2>
+<ul class="timeline">{% for e in p.grants %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}{% if e.sub %}<br><span class="sub">{{ e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
 {% endif %}
 
 {% if p.activities.size > 0 %}
