@@ -122,6 +122,7 @@ p { margin: 0 0 1em; }
 .pubs .ptitle a { color: var(--ink); border-bottom: 1px solid var(--accent-l); }
 .pubs .ptitle a:hover { color: var(--accent); text-decoration: none; border-bottom-color: var(--accent); }
 .pubs .journal { color: var(--ink); }
+.pubs .venue { color: var(--ink-2); }
 .pubs .journal i { font-style: italic; }
 .pubs .plinks { margin-top: 3px; font-size: 12.5px; }
 .pubs .plinks a + a { margin-left: 12px; }

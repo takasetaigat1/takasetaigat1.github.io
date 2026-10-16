@@ -22,7 +22,7 @@ permalink: /presentations/
       <span class="num">[{{ n }}]</span>
       <span class="authors">{{ pr.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" | replace: "et al.", "<i>et al.</i>" }}</span>
       <span class="ptitle">{{ pr.title }}</span>
-      <span class="journal">
+      <span class="journal venue">
         {% assign d = pr.date | append: "" | split: "-" %}{% assign yy = d[0] %}{% assign mm = d[1] | plus: 0 %}
         {% if pr.authors contains "髙瀬" %}{% assign when = yy | append: "年" | append: mm | append: "月" %}{% else %}{% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}{% assign mi = mm | minus: 1 %}{% assign when = months[mi] | append: " " | append: yy %}{% endif %}
         {{ pr.meeting }}{% if pr.place %}, {{ pr.place }}{% endif %}, {{ when }}{% if pr.type %} <span class="badge{% if pr.type == "招待" %} badge-invited{% endif %}">{{ pr.type }}</span>{% endif %}{% if pr.award %} — <b>{{ pr.award }}</b>{% endif %}
