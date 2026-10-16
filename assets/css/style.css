@@ -188,4 +188,5 @@ p { margin: 0 0 1em; }
   .dlist li, .timeline li { grid-template-columns: 1fr; gap: 2px; }
   .kv { grid-template-columns: 1fr; row-gap: 2px; }
   .kv dt { margin-top: 8px; }
+  .timeline .sub { display: block; }   /* 受賞の学会名などは改行して表示 */
 }
