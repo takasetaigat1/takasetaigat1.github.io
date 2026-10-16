@@ -47,8 +47,7 @@ awards:
 
 # 研究費・採択課題（sub: は任意。課題名などを2行目に薄字で表示）
 grants:
-  - period: 2027.04 – 現在
-    period_en: 2027.04 – present
+  - period: 2027.04 – 2030.03
     text: 日本学術振興会 特別研究員奨励費（240万円／3年）
     text_en: JSPS Grant-in-Aid for JSPS Fellows (2.4 million JPY / 3 years)
   - period: 2026.12
