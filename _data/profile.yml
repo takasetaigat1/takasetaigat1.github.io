@@ -29,12 +29,12 @@ awards:
     text: 優秀発表賞
     sub: 日本宇宙生物科学会 第38回大会
 
-# 研究費・研究課題（sub: は任意。課題名などを2行目に薄字で表示）
+# 競争的資金等（sub: は任意。課題名などを2行目に薄字で表示）
 grants:
   - period: 2027.04 –
     text: 日本学術振興会 特別研究員奨励費
-  - period: 2026.12 –
-    text: JAXA 小惑星リターンサンプル分析公募（AO）採択
+  - period: 2026.12
+    text: JAXA 2026年度リュウグウ試料・Bennu試料研究公募（AO2026）採択
     sub: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering"
   - period: 2025.04 –
     text: 東北大学 変動地球共生学卓越大学院プログラム

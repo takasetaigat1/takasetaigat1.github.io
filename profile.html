@@ -27,7 +27,7 @@ permalink: /profile/
 {% endif %}
 
 {% if p.grants.size > 0 %}
-<h2>研究費・研究課題</h2>
+<h2>競争的資金等</h2>
 <ul class="timeline">{% for e in p.grants %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text }}{% if e.sub %}<br><span class="sub">{{ e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
 {% endif %}
 
