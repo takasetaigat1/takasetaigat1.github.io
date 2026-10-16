@@ -117,6 +117,7 @@ p { margin: 0 0 1em; }
 .pubs .authors { color: var(--ink-2); }
 .badge { display: inline-block; font-size: 11px; line-height: 1; padding: 4px 7px; margin-left: 2px; vertical-align: 1px; color: var(--accent); border: 1px solid var(--accent); letter-spacing: .04em; }
 .badge-invited { background: var(--accent); color: #fff; }
+.badge-award { color: #2a5d9f; border-color: #2a5d9f; }
 .pubs .authors .me { font-weight: 600; color: var(--ink); }
 .pubs .ptitle { display: block; font-weight: 500; }
 .pubs .ptitle a { color: var(--ink); border-bottom: 1px solid var(--accent-l); }

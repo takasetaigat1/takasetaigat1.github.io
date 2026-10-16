@@ -25,7 +25,7 @@ permalink: /presentations/
       <span class="journal venue">
         {% assign d = pr.date | append: "" | split: "-" %}{% assign yy = d[0] %}{% assign mm = d[1] | plus: 0 %}
         {% if pr.authors contains "髙瀬" %}{% assign when = yy | append: "年" | append: mm | append: "月" %}{% else %}{% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}{% assign mi = mm | minus: 1 %}{% assign when = months[mi] | append: " " | append: yy %}{% endif %}
-        {{ pr.meeting }}{% if pr.place %}, {{ pr.place }}{% endif %}, {{ when }}{% if pr.type %} <span class="badge{% if pr.type == "招待" %} badge-invited{% endif %}">{{ pr.type }}</span>{% endif %}{% if pr.award %} — <b>{{ pr.award }}</b>{% endif %}
+        {{ pr.meeting }}{% if pr.place %}, {{ pr.place }}{% endif %}, {{ when }}{% if pr.type %} <span class="badge{% if pr.type == "招待" %} badge-invited{% endif %}">{{ pr.type }}</span>{% endif %}{% if pr.award %} <span class="badge badge-award">{{ pr.award }}</span>{% endif %}
       </span>
       {% if pr.url %}<div class="plinks"><a href="{{ pr.url }}" target="_blank" rel="noopener">Link</a></div>{% endif %}
     </li>
