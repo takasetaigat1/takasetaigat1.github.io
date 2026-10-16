@@ -9,14 +9,7 @@ permalink: /en/presentations/
 </div>
 
 {% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
-{% assign sections = "international|International meetings,domestic|Domestic meetings" | split: "," %}
-{% for s in sections %}
-  {% assign pair = s | split: "|" %}
-  {% assign key = pair[0] %}
-  {% assign label = pair[1] %}
-  {% assign items = site.data.presentations | where: "scope", key %}
-  {% if items.size > 0 %}
-  <h2>{{ label }}</h2>
+{% assign items = site.data.presentations | where: "scope", "international" %}
   <ol class="pubs">
     {% for pr in items %}{% assign n = items.size | minus: forloop.index0 %}
     <li>
@@ -31,5 +24,3 @@ permalink: /en/presentations/
     </li>
     {% endfor %}
   </ol>
-  {% endif %}
-{% endfor %}
