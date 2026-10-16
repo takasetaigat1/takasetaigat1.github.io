@@ -18,6 +18,9 @@
   --side-w: 250px;
 }
 
+/* 英語ページは欧文を Arial に（和文が混ざる箇所は IBM Plex Sans JP） */
+html[lang="en"] { --sans: Arial, "IBM Plex Sans JP", "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif; }
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { -webkit-text-size-adjust: 100%; }
 body {
