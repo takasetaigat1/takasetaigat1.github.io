@@ -53,8 +53,7 @@ grants:
   - period: 2026.12
     text: JAXA 小惑星Bennu試料研究公募（AO2026）採択
     text_en: JAXA Announcement of Opportunity for Bennu samples (AO2026)
-    sub: "研究代表者：“Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering”"
-    sub_en: "PI of “Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering”"
+    sub: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering"
   - period: 2025.04 –
     text: 東北大学 変動地球共生学卓越大学院プログラム
     text_en: WISE Program for Sustainability in the Dynamic Earth, Tohoku University
