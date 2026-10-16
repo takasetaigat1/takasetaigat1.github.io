@@ -18,4 +18,7 @@
       <a class="nv{% if active %} on{% endif %}" href="{{ item.url | relative_url }}">{{ item.label }}</a>
     {% endfor %}
   </nav>
+  <div class="lang-switch" role="group" aria-label="language">
+    <a href="{{ '/' | relative_url }}" class="{% unless is_en %}on{% endunless %}">日本語</a><a href="{{ '/en/' | relative_url }}" class="{% if is_en %}on{% endif %}">English</a>
+  </div>
 </aside>

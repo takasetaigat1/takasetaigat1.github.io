@@ -39,7 +39,6 @@ nav:
   - { label: 出版物,       url: /publications/ }
   - { label: 学会発表, url: /presentations/ }
   - { label: ニュース,     url: /news/ }
-  - { label: English,     url: /en/ }
 
 # トップページに表示するニュース件数
 home_news_count: 6
