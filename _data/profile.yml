@@ -47,14 +47,16 @@ awards:
 
 # 研究費・採択課題（sub: は任意。課題名などを2行目に薄字で表示）
 grants:
-  - period: 2027.04 –
+  - period: 2027.04 – 現在
+    period_en: 2027.04 – present
     text: 日本学術振興会 特別研究員奨励費（240万円／3年）
     text_en: JSPS Grant-in-Aid for JSPS Fellows (2.4 million JPY / 3 years)
   - period: 2026.12
     text: JAXA 小惑星Bennu試料研究公募（AO2026）採択
     text_en: JAXA Announcement of Opportunity for Bennu samples (AO2026)
     sub: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering"
-  - period: 2025.04 –
+  - period: 2025.04 – 現在
+    period_en: 2025.04 – present
     text: 東北大学 変動地球共生学卓越大学院プログラム
     text_en: WISE Program for Sustainability in the Dynamic Earth, Tohoku University
 
