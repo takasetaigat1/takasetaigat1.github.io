@@ -51,13 +51,11 @@ grants:
   - period: 2027.04 – 2028.03
     text: The Meteoritical Society Research Grant （3,000 USD／1年）
     text_en: The Meteoritical Society Research Grant (3,000 USD / 1 year)
-    sub: "Behavior of phosphorus during space weathering: TEM study of phosphate and phosphide on a space-weathered Ryugu particle（宇宙風化に伴うリンの挙動：宇宙風化したRyugu粒子表面に存在するリン酸塩・リン化物鉱物の透過電子顕微鏡分析）"
-    sub_en: "Behavior of phosphorus during space weathering: TEM study of phosphate and phosphide on a space-weathered Ryugu particle"
+    sub: "Behavior of phosphorus during space weathering: TEM study of phosphate and phosphide on a space-weathered Ryugu particle"
   - period: 2026.12
     text: JAXA 小惑星Bennu試料研究公募（AO2026）採択
     text_en: JAXA Announcement of Opportunity for Bennu samples (AO2026)
-    sub: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering（宇宙風化に伴う小惑星Bennuの反射スペクトルの時間変化の定量評価）"
-    sub_en: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering"
+    sub: "Quantifying time evolution of reflectance spectra of asteroid Bennu material due to space weathering"
   - period: 2025.04 – 現在
     period_en: 2025.04 – present
     text: 東北大学 変動地球共生学卓越大学院プログラム
