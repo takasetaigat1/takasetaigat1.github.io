@@ -8,7 +8,7 @@
 # 1 件の書き方：
 # - category: first_published
 #   year: 2026
-#   authors: "<me>T. Takase</me>, T. Nakamura, ..."   # <me>…</me> で囲むと太字
+#   authors: "<me>T. Takase</me>, T. Nakamura, and ..."   # <me>…</me> で囲むと太字
 #   title: "論文タイトル"
 #   journal: "Icarus"
 #   volume: "420"           # 任意
@@ -24,21 +24,21 @@
 # ---- 主著論文（投稿中） ----
 - category: first_submitted
   year: 2026
-  authors: "<me>T. Takase</me>, Y. Fukuda, T. Nakamura"
+  authors: "<me>T. Takase</me>, Y. Fukuda, and T. Nakamura"
   title: "SEM observations and carbon coating alter reflectance spectra of carbonaceous asteroid samples"
   journal: "Meteoritics & Planetary Science"
   status: "submitted"
 
 - category: first_submitted
   year: 2026
-  authors: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, R. Kawada, S. Ishida, Y. Enokido, R. Sakurai, S. Yamashita, Y. Takahashi, K. Sakamoto, S. Tachibana"
+  authors: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, R. Kawada, S. Ishida, Y. Enokido, R. Sakurai, S. Yamashita, Y. Takahashi, K. Sakamoto, and S. Tachibana"
   title: "Chemical characteristics of amorphous Mg phosphate phases in samples from carbonaceous asteroids Bennu and Ryugu"
   journal: "Meteoritics & Planetary Science"
   status: "submitted"
 
 - category: first_submitted
   year: 2026
-  authors: "<me>T. Takase</me>, T. Nakamura, Y. Fukuda, K. Tsutsui, S. Ishida, R. Kawada, K. Amano, Y. Enokido, K. Sakamoto, S. Tachibana"
+  authors: "<me>T. Takase</me>, T. Nakamura, Y. Fukuda, K. Tsutsui, S. Ishida, R. Kawada, K. Amano, Y. Enokido, K. Sakamoto, and S. Tachibana"
   title: "Submillimeter-scale diversity of near- to mid-infrared reflectance spectra within samples from asteroids Ryugu and Bennu: Records of space weathering and aqueous alteration"
   journal: "Icarus"
   status: "submitted"
