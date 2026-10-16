@@ -27,7 +27,7 @@ permalink: /en/profile/
 {% endif %}
 
 {% if p.grants.size > 0 %}
-<h2>Grants and funding</h2>
+<h2>Grants and projects</h2>
 <ul class="timeline">{% for e in p.grants %}<li><span class="dt">{{ e.period }}</span><span>{{ e.text_en | default: e.text }}{% if e.sub %}<br><span class="sub">{{ e.sub_en | default: e.sub }}</span>{% endif %}</span></li>{% endfor %}</ul>
 {% endif %}
 

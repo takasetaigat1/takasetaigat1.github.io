@@ -20,7 +20,7 @@ permalink: /publications/
     {% for pb in items %}{% assign n = items.size | minus: forloop.index0 %}
     <li>
       <span class="num">[{{ n }}]</span>
-      <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" | replace: "et al.", "<i>et al.</i>" }} ({{ pb.year }})</span>
+      <span class="authors">{{ pb.authors | replace: "<me>", '<span class="me">' | replace: "</me>", "</span>" | replace: "et al.", "<i>et al.</i>" }}{% unless pb.status == "submitted" %} ({{ pb.year }}){% endunless %}</span>
       {% assign link = "" %}{% if pb.doi %}{% assign link = "https://doi.org/" | append: pb.doi %}{% elsif pb.url %}{% assign link = pb.url %}{% endif %}
       <span class="ptitle">{% if link != "" %}<a href="{{ link }}" target="_blank" rel="noopener">{{ pb.title }}</a>{% else %}{{ pb.title }}{% endif %}</span>
       <span class="journal">
