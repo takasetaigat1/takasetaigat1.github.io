@@ -19,7 +19,7 @@ permalink: /en/profile/
 <div class="content"><ul>{% for i in p.interests_en %}<li>{{ i }}</li>{% endfor %}</ul></div>
 
 <h2>Career</h2>
-<ul class="timeline">{% for e in p.career %}<li><span class="dt">{{ e.period_en | default: e.period }}</span><span>{{ e.text_en | default: e.text }}</span></li>{% endfor %}</ul>
+<ul class="timeline">{% for e in p.career %}{% unless e.hide_en %}<li><span class="dt">{{ e.period_en | default: e.period }}</span><span>{{ e.text_en | default: e.text }}</span></li>{% endunless %}{% endfor %}</ul>
 
 {% if p.awards.size > 0 %}
 <h2>Awards</h2>
