@@ -8,7 +8,7 @@ permalink: /presentations/
   <div class="muted">Presentations</div>
 </div>
 
-{% assign sections = "international|国際学会,domestic|国内学会" | split: "," %}
+{% assign sections = "international|国際学会,domestic|国内学会・シンポジウム" | split: "," %}
 {% for s in sections %}
   {% assign pair = s | split: "|" %}
   {% assign key = pair[0] %}
