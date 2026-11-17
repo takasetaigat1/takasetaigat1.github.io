@@ -19,7 +19,7 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; overflow-y: scroll; scrollbar-gutter: stable; }  /* スクロールバーの有無で中央位置がずれないよう常に確保 */
 body {
   font-family: var(--sans);
   color: var(--ink);
