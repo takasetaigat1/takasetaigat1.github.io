@@ -5,7 +5,7 @@
 #   authors: "<me>T. Takase</me> and T. Nakamura"
 #   title: "発表タイトル"
 #   meeting: "Meteoritical Society 2026"
-#   place: "Perth, Australia"       # 任意
+#   place: "Perth, Australia"       # 任意。国際：City, Country（米国は City, State, USA）／国内：都市名を日本語（仙台 など）+ place_en: "Sendai, Japan"
 #   type: 口頭                        # 口頭 / ポスター / 招待 など
 #   award: "学生奨励賞"                # 任意
 #   url: ""                          # 任意（要旨など）
@@ -53,7 +53,8 @@
   authors: "<me>T. Takase</me>, Y. Fukuda, and T. Nakamura"
   title: "Effects of carbon coating and electron beam irradiation on the reflectance spectra of carbonaceous meteorites and returned samples"
   meeting: "Earth, Sea and Sky XII: International Joint Graduate Program Workshop in Earth and Environmental Sciences"
-  place: "Sendai, Japan"
+  place: "仙台"
+  place_en: "Sendai, Japan"
   type: ポスター
 
 - date: 2026-05
@@ -92,7 +93,7 @@
   authors: "<me>T. Takase</me>, Y. Fukuda, T. Nakamura, K. Tsutsui, S. Ishida, R. Kawada, Y. Enokido, K. Sakamoto, and S. Tachibana"
   title: "FT-IR and synchrotron XRD analyses of samples from asteroids Ryugu and Bennu: Spectral and mineralogical diversity at the sub-millimeter scale"
   meeting: "Workshop on Bennu and Ryugu: Samples from the Early Solar System"
-  place: "Texas, USA"
+  place: "Houston, Texas, USA"
   type: 口頭
 
 - date: 2025-09
@@ -123,7 +124,8 @@
   authors: "<me>T. Takase</me>, Y. Fukuda, and T. Nakamura"
   title: "Relationships between reflectance spectra and surface structures of space-weathered samples from asteroid Ryugu"
   meeting: "Earth, Sea and Sky XI: International Joint Graduate Program Workshop in Earth and Environmental Sciences"
-  place: "Sendai, Japan"
+  place: "仙台"
+  place_en: "Sendai, Japan"
   type: ポスター
 
 - date: 2025-05
@@ -131,7 +133,8 @@
   authors: "<me>T. Takase</me>, Y. Fukuda, and T. Nakamura"
   title: "Diversity of mid-infrared reflectance spectra of samples from asteroid Ryugu"
   meeting: "Japan Geoscience Union Meeting 2025"
-  place: "Makuhari, Japan"
+  place: "幕張"
+  place_en: "Makuhari, Japan"
   type: 口頭
 
 - date: 2024-11
