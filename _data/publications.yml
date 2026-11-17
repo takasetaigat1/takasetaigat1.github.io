@@ -24,6 +24,13 @@
 # ---- 主著論文（投稿中） ----
 - category: first_submitted
   year: 2026
+  authors: "<me>T. Takase</me>, T. Nakamura, M. Matsumoto, J.-C. Viennet, K. Tsutsui, S. Ishida, R. Kawada, D. Nakashima, Y. Enokido, R. Sakurai, A. Duverger, Y. Takahashi, A. Takemoto, T. Ohno, J. Matsuno, M. Uesugi, S. Yamashita, K. Sakamoto, and S. Tachibana"
+  title: "Ammonium mica identified in a sample from asteroid Bennu: A new carrier of ammonium in the outer Solar System"
+  journal: "Earth and Planetary Science Letters"
+  status: "submitted"
+
+- category: first_submitted
+  year: 2026
   authors: "<me>T. Takase</me>, Y. Fukuda, and T. Nakamura"
   title: "SEM observations and carbon coating alter reflectance spectra of carbonaceous asteroid samples"
   journal: "Meteoritics & Planetary Science"
