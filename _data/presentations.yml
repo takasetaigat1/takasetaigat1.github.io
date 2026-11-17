@@ -5,7 +5,7 @@
 #   authors: "<me>T. Takase</me> and T. Nakamura"
 #   title: "発表タイトル"
 #   meeting: "Meteoritical Society 2026"
-#   place: "Perth, Australia"       # 任意。国際：City, Country（米国は City, State, USA）／国内：都市名を日本語（仙台 など）+ place_en: "Sendai, Japan"
+#   place: "Perth, Australia"       # 任意。国際：City, Country（米国は City, State, USA）／国内：学会名が日本語なら都市名を日本語（仙台）+ place_en: "Sendai, Japan"、学会名が英語なら "Sendai, Japan" のみ
 #   type: 口頭                        # 口頭 / ポスター / 招待 など
 #   award: "学生奨励賞"                # 任意
 #   url: ""                          # 任意（要旨など）
@@ -53,8 +53,7 @@
   authors: "<me>T. Takase</me>, Y. Fukuda, and T. Nakamura"
   title: "Effects of carbon coating and electron beam irradiation on the reflectance spectra of carbonaceous meteorites and returned samples"
   meeting: "Earth, Sea and Sky XII: International Joint Graduate Program Workshop in Earth and Environmental Sciences"
-  place: "仙台"
-  place_en: "Sendai, Japan"
+  place: "Sendai, Japan"
   type: ポスター
 
 - date: 2026-05
@@ -64,8 +63,7 @@
   title_en: "Mineralogical study of shock melt in the sample from asteroid Ryugu"
   authors_en: "<me>T. Takase</me>, M. Matsumoto, T. Nakamura, Y. Fukuda, R. Kawada, S. Ishida, S. Yamashita, and Y. Takahashi"
   meeting: "Japan Geoscience Union – American Geophysical Union Joint Meeting 2026"
-  place: "幕張"
-  place_en: "Makuhari, Japan"
+  place: "Makuhari, Japan"
   type: 口頭
 
 - date: 2026-03
@@ -124,8 +122,7 @@
   authors: "<me>T. Takase</me>, Y. Fukuda, and T. Nakamura"
   title: "Relationships between reflectance spectra and surface structures of space-weathered samples from asteroid Ryugu"
   meeting: "Earth, Sea and Sky XI: International Joint Graduate Program Workshop in Earth and Environmental Sciences"
-  place: "仙台"
-  place_en: "Sendai, Japan"
+  place: "Sendai, Japan"
   type: ポスター
 
 - date: 2025-05
@@ -133,8 +130,7 @@
   authors: "<me>T. Takase</me>, Y. Fukuda, and T. Nakamura"
   title: "Diversity of mid-infrared reflectance spectra of samples from asteroid Ryugu"
   meeting: "Japan Geoscience Union Meeting 2025"
-  place: "幕張"
-  place_en: "Makuhari, Japan"
+  place: "Makuhari, Japan"
   type: 口頭
 
 - date: 2024-11
