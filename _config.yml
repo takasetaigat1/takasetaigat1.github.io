@@ -52,6 +52,9 @@ nav_en:
 # トップページに表示するニュース件数
 home_news_count: 6
 
+# 検索エンジン避け（true で noindex を付与、robots.txt も Disallow）。正式公開時に false にする
+noindex: true
+
 # ---- 以下は触らなくてよい設定 ----
 markdown: kramdown
 kramdown:

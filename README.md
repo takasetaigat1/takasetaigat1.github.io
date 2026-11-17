@@ -63,3 +63,7 @@ bundle exec jekyll serve
 ```
 
 で http://localhost:4000 に表示されます。
+
+## 検索エンジン避け
+
+現在 `_config.yml` の `noindex: true` により、全ページに `noindex` を付け、`robots.txt` でもクロールを拒否しています（URL を知っている人は閲覧できます）。正式公開時は `noindex: false` にしてください。
