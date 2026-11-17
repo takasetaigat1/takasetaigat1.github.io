@@ -11,6 +11,25 @@
 #   url: ""                          # 任意（要旨など）
 #   title_en / authors_en / meeting_en / place_en / award_en: 英語ページ用（日本語発表のみ。無ければ日本語のまま）
 
+- date: 2027-03
+  scope: international
+  authors: "<me>T. Takase</me>, T. Nakamura, M. Matsumoto, J.-C. Viennet, K. Tsutsui, S. Ishida, R. Kawada, D. Nakashima, Y. Enokido, R. Sakurai, A. Duverger, Y. Takahashi, A. Takemoto, T. Ohno, J. Matsuno, M. Uesugi, S. Yamashita, K. Sakamoto, and S. Tachibana"
+  title: "Ammonium mica identified in a sample from asteroid Bennu: A new carrier of ammonium in the outer Solar System"
+  meeting: "The 58th Lunar and Planetary Science Conference"
+  place: "The Woodlands, Texas, USA"
+  type: 口頭
+
+- date: 2027-03
+  scope: domestic
+  authors: "<me>T. Takase</me>, T. Nakamura, M. Matsumoto, J.-C. Viennet, K. Tsutsui, S. Ishida, R. Kawada, D. Nakashima, Y. Enokido, R. Sakurai, A. Duverger, Y. Takahashi, A. Takemoto, T. Ohno, J. Matsuno, M. Uesugi, S. Yamashita, K. Sakamoto, and S. Tachibana"
+  title: "小惑星Bennu試料中に発見されたアンモニウム雲母の鉱物学的特徴"
+  title_en: "Mineralogical characteristics of ammonium mica discovered in a sample from asteroid Bennu"
+  meeting: "「惑星物質科学のフロンティア」研究会"
+  meeting_en: "Workshop on Frontiers of Planetary Materials Science"
+  place: "柏"
+  place_en: "Kashiwa, Japan"
+  type: 口頭
+
 - date: 2026-10
   scope: international
   authors: "<me>T. Takase</me>, T. Nakamura, Y. Fukuda, K. Tsutsui, S. Ishida, R. Kawada, K. Amano, Y. Enokido, K. Sakamoto, and S. Tachibana"
