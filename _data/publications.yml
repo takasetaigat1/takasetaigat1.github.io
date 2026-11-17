@@ -53,6 +53,27 @@
 
 - category: coauthor
   year: 2026
+  authors: "K. Yumoto et al. (incl. <me>T. Takase</me>)"
+  title: "Performance of the MMX Infrared Spectrometer (MIRS) verified through measurements of Phobos analogue materials"
+  journal: "Earth, Planets and Space"
+  status: "submitted"
+
+- category: coauthor
+  year: 2026
+  authors: "T. Morita et al. (incl. <me>T. Takase</me>)"
+  title: "Performance of OROCHI verified through measurements of Phobos analog materials"
+  journal: "Earth, Planets and Space"
+  status: "submitted"
+
+- category: coauthor
+  year: 2026
+  authors: "M. Matsumoto et al. (incl. <me>T. Takase</me>)"
+  title: "Accelerated oxidation experiment on asteroid Ryugu samples: Reproduction of CI chondrite-like petrography"
+  journal: "Geochimica et Cosmochimica Acta"
+  status: "submitted"
+
+- category: coauthor
+  year: 2026
   authors: "H. Onuma et al. (incl. <me>T. Takase</me>)"
   title: "Surface modifications of a space-weathered Ryugu sample and the reflectance spectral response"
   journal: "The Planetary Science Journal"
