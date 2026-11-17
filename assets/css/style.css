@@ -114,7 +114,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- publications ---------- */
 .pubs { list-style: none; counter-reset: pub; }
-.pubs li { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.7; }
+.pubs li { padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.6; }
 .pubs li { position: relative; padding-left: 40px; }
 .pubs .num { position: absolute; left: 0; width: 28px; text-align: right; color: var(--ink-2); font-size: 14px; font-variant-numeric: tabular-nums; }
 .pubs .authors { color: var(--ink-2); }
