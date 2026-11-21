@@ -53,6 +53,13 @@
 # ---- 共著論文 ----
 - category: coauthor
   year: 2026
+  authors: "A. Wargnier et al. (incl. <me>T. Takase</me>)"
+  title: "Simulating space-weathering on Phobos: He<sup>2+</sup>, Ar<sup>7+</sup>, and O<sup>+</sup> ion irradiation of simulants, minerals, and organics"
+  journal: "Icarus"
+  status: "submitted"
+
+- category: coauthor
+  year: 2026
   authors: "M. Matsumoto et al. (incl. <me>T. Takase</me>)"
   title: "Accelerated oxidation experiment on asteroid Ryugu samples: Reproduction of CI chondrite-like petrography"
   journal: "Geochimica et Cosmochimica Acta"
